@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <com.mapbar.scale.ScaleFrameLayout
+        android:id="@+id/xlistview_footer_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="2dp"
+        android:focusable="true"
+        android:background="@drawable/shade_focus_state">
+
+        <ProgressBar
+            android:id="@+id/xlistview_footer_progressbar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/xlistview_footer_hint_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:text="@string/listview_footer_hint_normal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="13dp" />
+    </com.mapbar.scale.ScaleFrameLayout>
+</com.mapbar.scale.ScaleLinearLayout>

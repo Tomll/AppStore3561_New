@@ -1,0 +1,61 @@
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <com.wedrive.welink.appstore.app.widget.CropImageView
+        android:id="@+id/crop_image"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_weight="5" />
+
+    <com.mapbar.scale.ScaleLinearLayout
+        android:id="@+id/camera_tools_view"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.mapbar.scale.ScaleLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <com.mapbar.scale.ScaleTextView
+                android:id="@+id/crop_submit"
+                style="@style/textAppearanceXXXLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_details"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="设置"
+                android:textColor="@color/white" />
+        </com.mapbar.scale.ScaleLinearLayout>
+
+        <com.mapbar.scale.ScaleLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <com.mapbar.scale.ScaleTextView
+                android:id="@+id/crop_reset"
+                style="@style/textAppearanceXXXLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_details"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="取消"
+                android:textColor="@color/white" />
+        </com.mapbar.scale.ScaleLinearLayout>
+    </com.mapbar.scale.ScaleLinearLayout>
+
+</com.mapbar.scale.ScaleLinearLayout>

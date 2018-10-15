@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:keepScreenOn="true"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/ind_title"
+        android:visibility="gone"
+        layout="@layout/layout_title_common" />
+
+    <com.mapbar.android.widget.MViewAnimator
+        android:id="@+id/animator"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ind_title"
+        android:background="@color/page_bg"
+        android:clickable="true" >
+
+        <com.mapbar.scale.ScaleLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.mapbar.scale.ScaleLinearLayout>
+    </com.mapbar.android.widget.MViewAnimator>
+
+</com.mapbar.scale.ScaleRelativeLayout>

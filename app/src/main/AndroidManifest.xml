@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wedrive.welink.appstore"
+    android:versionCode="101511011"
+    android:versionName="V1.0.1511011" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--<uses-permission android:name="android.permission.DELETE_PACKAGES" />-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <application
+        android:name="com.wedrive.welink.appstore.MainApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.wedrive.welink.appstore.MainActivity"
+            android:clearTaskOnLaunch="false"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wedrive.appstore" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.wedrive.welink.appstore.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service android:name="com.wedrive.welink.appstore.app.download.DownloadService" >
+            <intent-filter>
+                <action android:name="com.wedrive.welink.appstore.download.service.action" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.wedrive.welink.appstore.app.receive.CommandReceive" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.wedrive.welink.appstore.app.receive.MessageReceive" >
+            <intent-filter>
+                <action android:name="com.wedrive.action.COMMAND_SEND" />
+                <action android:name="com.wedrive.action.APPSTORE_COMMAND_SEND" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.wedrive.welink.appstore.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <!--元数据-->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <!-- 统计包 -->
+        <meta-data
+            android:name="MAPBAR_STAT_APPKEY"
+            android:value="881e015283c606496edghc7df4564tyq" />
+        <meta-data
+            android:name="MAPBAR_STAT_CHANNEL"
+            android:value="AppMarket3561" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="577b8e6667e58ec6d9001c6c" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="WedriveMarket" />
+    </application>
+
+</manifest>

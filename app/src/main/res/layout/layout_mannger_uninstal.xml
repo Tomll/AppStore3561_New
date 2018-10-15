@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.mapbar.scale.ScaleImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/line_horizontal" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lVi_uninstall_apps"
+        style="@style/base_listView_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:cacheColorHint="@null"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:transcriptMode="disabled">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.mapbar.scale.ScaleTextView
+        android:id="@+id/tv_update_descript"
+        style="@style/textAppearanceXXXLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="@color/gray"
+        android:visibility="gone" />
+
+</com.mapbar.scale.ScaleRelativeLayout>

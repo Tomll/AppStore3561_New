@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="10dp">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gv_search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/home_bannger_image_padding"
+        android:layout_marginRight="@dimen/home_bannger_image_padding"
+        android:gravity="center_vertical"
+        android:overScrollMode="never" />
+
+</com.mapbar.scale.ScaleLinearLayout>

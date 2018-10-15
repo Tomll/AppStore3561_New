@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:weightSum="19" >
+
+    <com.mapbar.scale.ScaleLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="60px"
+        android:layout_weight="10"
+        android:orientation="vertical" >
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_searchHistory"
+            style="@style/textAppearanceXXLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/tv_hotCarAPP"
+            android:textColor="@color/gray" />
+
+        <com.mapbar.scale.ScaleFrameLayout
+            android:id="@+id/framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp" >
+
+            <com.wedrive.welink.appstore.app.widget.MyViewGroup
+                android:id="@+id/myviewGroup_recom_apps"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </com.wedrive.welink.appstore.app.widget.MyViewGroup>
+        </com.mapbar.scale.ScaleFrameLayout>
+    </com.mapbar.scale.ScaleLinearLayout>
+    <com.mapbar.scale.ScaleLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="60px"
+        android:layout_weight="9"
+        android:orientation="vertical" >
+
+        <com.mapbar.scale.ScaleLinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1" >
+
+            <com.mapbar.scale.ScaleTextView
+                style="@style/textAppearanceXXLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_searchHistory"
+                android:textColor="@color/gray" />
+
+            <com.mapbar.scale.ScaleTextView
+                android:id="@+id/tv_cleanHistory"
+                style="@style/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="44px"
+                android:text="@string/tv_cleanHistory"
+                android:textColor="@color/blue"
+                android:visibility="invisible"
+                android:focusable="true"
+                android:background="@drawable/shade_focus_state"/>
+        </com.mapbar.scale.ScaleLinearLayout>
+
+        <com.mapbar.scale.ScaleFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp" >
+
+                <com.wedrive.welink.appstore.app.widget.MyViewGroup
+                    android:id="@+id/myviewGroup_history_apps"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+                </com.wedrive.welink.appstore.app.widget.MyViewGroup>
+        </com.mapbar.scale.ScaleFrameLayout>
+    </com.mapbar.scale.ScaleLinearLayout>
+
+</com.mapbar.scale.ScaleLinearLayout>

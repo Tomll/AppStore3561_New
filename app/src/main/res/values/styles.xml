@@ -1,0 +1,164 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="textAppearanceSSSmall">
+        <item name="android:textSize">8dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="textAppearanceSSmall">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="textAppearanceSmall">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="textAppearanceSMedium">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="textAppearanceMedium">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="textAppearanceLarge">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="textAppearanceXLarge">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="textAppearanceXXLarge">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="textAppearanceXXXLarge">
+        <item name="android:textSize">24dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="textAppearanceXXXXLarge">
+        <item name="android:textSize">30dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="textAppearanceXXXXXLarge">
+        <item name="android:textSize">26dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="textGridAppearanceLarge">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="noAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="AppTheme" parent="@android:style/Theme.Light">
+        <item name="android:windowBackground">@color/page_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/noAnimation</item>
+    </style>
+
+    <style name="Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="customDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="customProgressDialog" parent="@style/customDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="base_listView_style">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:divider">@null</item>
+        <item name="android:scrollbars">@null</item>
+        <item name="android:dividerHeight">@dimen/divider_height</item>
+    </style>
+
+    <style name="base_gridView_style">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:scrollbars">@null</item>
+        <item name="android:dividerHeight">@dimen/divider_height</item>
+    </style>
+
+    <!-- progress_horizontal -->
+    <style name="mProgress_horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+    <!-- rationgBar -->
+    <style name="SmallRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar_state_small</item>
+        <item name="android:layout_height">15dp</item>
+    </style>
+    <!--fiveRatingBar-->
+    <style name="fiveRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar_state_large</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="android:maxHeight">20dp</item>
+    </style>
+
+
+    <style name="LargeRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar_state_large</item>
+    </style>
+
+    <style name="FullHeightDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

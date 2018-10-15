@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:background="@drawable/shape_detail_dialog_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RatingBar
+            android:id="@+id/ratBar_details_alrelt"
+            style="@style/fiveRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:stepSize="1" />
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_details_clickforgrade"
+            style="@style/textAppearanceXLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/ratBar_details_alrelt"
+            android:text="点击评分"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/deep_gray" />
+    </RelativeLayout>
+
+    <!--  android:imeOptions="actionDone|flagNoExtractUi" -->
+    <com.mapbar.scale.ScaleEditText
+        android:id="@+id/edtTxt_details_content"
+        style="@style/textAppearanceXLarge"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:layout_below="@+id/tv_details_clickforgrade"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_detail_dialog_edxttext_bg"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="@string/detail_common_dialog_content_hint"
+        android:imeOptions="actionDone|flagNoExtractUi"
+        android:minHeight="119dp"
+        android:padding="6dp"
+        android:textColor="@color/edit_hint_textcolor">
+
+        <requestFocus />
+    </com.mapbar.scale.ScaleEditText>
+
+    <com.mapbar.scale.ScaleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/line_horizontal" />
+
+    <com.mapbar.scale.ScaleLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_commit"
+            style="@style/textAppearanceXXLarge"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发表"
+            android:textColor="@color/blue_details" />
+
+        <com.mapbar.scale.ScaleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/line_vertical" />
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_cancel"
+            style="@style/textAppearanceXXLarge"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/blue_details" />
+    </com.mapbar.scale.ScaleLinearLayout>
+</com.mapbar.scale.ScaleLinearLayout>

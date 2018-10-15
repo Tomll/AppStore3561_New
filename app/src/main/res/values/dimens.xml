@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <dimen name="ranking_list_title_height">63dp</dimen>
+
+    <!-- 推荐页面 -->
+    <dimen name="home_bannger_padding">10dp</dimen>
+    <dimen name="home_bannger_image_padding">3dp</dimen>
+    <dimen name="home_bannger_image_width">230dp</dimen>
+    <dimen name="home_bannger_image_height">130dp</dimen>
+    <dimen name="home_padding_left">15dp</dimen>
+    <dimen name="home_app_padding_left">25dp</dimen>
+    <dimen name="home_item_app_width">150dp</dimen>
+    <dimen name="home_item_app_image_padding_top">10dp</dimen>
+    <dimen name="home_item_app_imagename_padding_top">9dp</dimen>
+    <dimen name="home_item_app_imagename_padding_buttom">2dp</dimen>
+    <dimen name="home_apps_horizontal_spacing">10dp</dimen>
+    <dimen name="home_apps_column_width">90dp</dimen>
+    <dimen name="home_apps_padding_buttom">24dp</dimen>
+    
+    <!-- 收索页面 -->
+    <dimen name="home_search_text_width">100dp</dimen>
+    <dimen name="home_search_text_height">120dp</dimen>
+    
+    <!-- 详情页面 -->
+    <dimen name="home_detail_image_width">230dp</dimen>
+    <dimen name="home_detail_image_height">120dp</dimen>
+
+    <!-- 管理页面 -->
+
+    <dimen name="manage_padding_top">28dp</dimen>
+    <dimen name="manage_padding_bottom">32dp</dimen>
+    <dimen name="manage_icon_padding_top">20dp</dimen>
+    <dimen name="manage_option_text_size">16dp</dimen>
+    <dimen name="manage_option_text_margin_right">10dp</dimen>
+    <dimen name="manage_content_margin_left">14dp</dimen>
+    <dimen name="manage_content_margin_top">5dp</dimen>
+    <dimen name="manage_content_margin_bottom">5dp</dimen>
+
+    <!-- 设置页面 -->
+
+    <dimen name="setting_item_margin_left">78dp</dimen>
+    <dimen name="setting_item_margin_right">78dp</dimen>
+    <dimen name="setting_item_divider_margin_left">63dp</dimen>
+    <dimen name="setting_margin_bottom">28dp</dimen>
+
+    <!-- 帮助页面 -->
+
+    <dimen name="help_titile_margintop">22dp</dimen>
+    <dimen name="help_content_margintop">35dp</dimen>
+    <dimen name="help_content_question_name_marginleft">21dp</dimen>
+    <dimen name="help_content_question_content_marginleft">14dp</dimen>
+    <dimen name="help_content_question_content_margintop">21dp</dimen>
+    <dimen name="help_content_question_content_marginright">46dp</dimen>
+    <dimen name="help_content_question_content_vertical_spacing">10dp</dimen>
+
+    <!-- 下载 更新 卸载 -->
+
+    <dimen name="manager_item_common_paddingtop">8dp</dimen>
+    <dimen name="manager_item_common_appinfo_marginleft">35dp</dimen>
+    <dimen name="manager_item_common_height">140dp</dimen>
+    <dimen name="manager_item_common_index_width">42dp</dimen>
+    <dimen name="manager_item_common_appinfo_height">85dp</dimen>
+    <dimen name="manager_item_common_appinfo_width">203dp</dimen>
+    <dimen name="manager_item_common_appicon_width">70dp</dimen>
+    <dimen name="manager_item_common_appdesc_marginleft">20dp</dimen>
+    <dimen name="manager_item_common_appinfo_RatingBar_margintop">3dp</dimen>
+
+    <!-- layout_manage_detail_contact_us_page.xml -->
+
+    <dimen name="manager_contact_content_margintop">65dp</dimen>
+    <dimen name="manager_contact_content_marginleft">77dp</dimen>
+    <dimen name="manager_contact_content_line_spacing">49dp</dimen>
+    <dimen name="manager_contact_content_weixin_width">158dp</dimen>
+    <dimen name="manager_contact_content_weixin_marginbottom">43dp</dimen>
+    <dimen name="manager_contact_content_weixin_marginright">60dp</dimen>
+    <dimen name="manager_contact_content_weixin_padding">10dp</dimen>
+
+    <!-- layout_app_detail_title -->
+
+    <dimen name="app_detail_appicon_marginleft">25dp</dimen>
+    <dimen name="app_detail_appicon_margintop">12dp</dimen>
+    <dimen name="app_detail_appname_marginleft">24dp</dimen>
+    <dimen name="app_detail_appname_margintop">12dp</dimen>
+    <dimen name="app_detail_download_count_marginleft">25dp</dimen>
+    <dimen name="app_detail_app_size_marginleft">24dp</dimen>
+    <dimen name="app_detail_app_button_marginleft">57dp</dimen>
+    <dimen name="app_detail_app_button_height">32dp</dimen>
+    <dimen name="app_detail_app_button_width">83dp</dimen>
+    <dimen name="app_detail_app_renz_icon">16dp</dimen>
+    <dimen name="app_detail_app_renz_icon_marginleft">25dp</dimen>
+
+    <dimen name="dp_8_nega">-8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_90">90dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_110">110dp</dimen>
+
+    <dimen name="divider_height">0dp</dimen>
+
+</resources>

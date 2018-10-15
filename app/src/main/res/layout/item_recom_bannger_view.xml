@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="1.5dp"
+    android:paddingBottom="1.5dp"
+    android:paddingLeft="@dimen/home_padding_left"
+    android:paddingRight="@dimen/home_padding_left"
+    android:focusable="true"
+    android:focusableInTouchMode="false"
+    android:gravity="center"
+    android:background="@drawable/shade_focus_state"
+    android:orientation="vertical" >
+
+    <com.mapbar.scale.ScaleImageView
+        android:id="@+id/img_bannger_item"
+        android:layout_width="@dimen/home_bannger_image_width"
+        android:layout_height="@dimen/home_bannger_image_height"
+        android:scaleType="fitCenter" />
+</com.mapbar.scale.ScaleLinearLayout>
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.mapbar.scale.ScaleLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/banner_gallery"
+            style="@style/base_listView_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:cacheColorHint="@null"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <com.mapbar.scale.ScaleLinearLayout
+                android:id="@+id/lv_banners"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            </com.mapbar.scale.ScaleLinearLayout>
+        </HorizontalScrollView>
+    </com.mapbar.scale.ScaleLinearLayout>
+
+<!--    <View
+        android:layout_width="match_parent"
+        android:background="@drawable/line_horizontal"
+        android:layout_height="1dp"/>-->
+
+    <com.mapbar.scale.ScaleTextView
+        android:id="@+id/txt_app_title"
+        style="@style/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="@dimen/home_bannger_padding"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/home_bannger_padding"
+        android:text="@string/recom_hot_apps"
+        android:textColor="@color/white" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gv_apps_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:overScrollMode="never"
+        android:paddingLeft="@dimen/home_padding_left">
+
+    </android.support.v7.widget.RecyclerView>
+</com.mapbar.scale.ScaleLinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.mapbar.scale.ScaleRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" >
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_temp"
+            style="@style/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/app_detail_appicon_marginleft"
+            android:text="综合评分"
+            android:textColor="@color/white" />
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_grade"
+            style="@style/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="48px"
+            android:layout_toRightOf="@id/tv_temp"
+            android:text=""
+            android:textColor="#ffff00" />
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_grade_peoples"
+            style="@style/textAppearanceSMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:layout_toRightOf="@id/tv_grade"
+            android:text=""
+            android:textColor="@color/deep_gray" />
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_load_common"
+            style="@style/textAppearanceMedium"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="80px"
+            android:text="撰写评论"
+            android:textColor="#2f6cff"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:background="@drawable/shade_focus_state"/>
+    </com.mapbar.scale.ScaleRelativeLayout>
+
+    <com.mapbar.scale.ScaleImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="@drawable/line_horizontal" />
+
+    <com.mapbar.scale.ScaleListView
+        android:id="@+id/lVi_app_commons"
+        style="@style/base_listView_style"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"
+        android:cacheColorHint="@null"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:gravity="center_vertical"
+        android:listSelector="#00000000" >
+    </com.mapbar.scale.ScaleListView>
+
+</com.mapbar.scale.ScaleLinearLayout>

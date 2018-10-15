@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 标题行 -->
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_title"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/manage_padding_bottom"
+    android:paddingTop="@dimen/manage_padding_top" >
+
+    <com.mapbar.scale.ScaleLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/manage_content_margin_bottom"
+        android:layout_marginLeft="@dimen/manage_content_margin_left"
+        android:layout_weight="1" >
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/txt_mannger_load"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/manage_option_text_margin_right"
+            android:layout_weight="1"
+            android:background="@drawable/selector_setting_options_bg"
+            android:drawableTop="@drawable/ico_manage_download"
+            android:gravity="center"
+            android:focusable="true"
+            android:paddingTop="@dimen/manage_icon_padding_top"
+            android:text="@string/xia_zai_zhong_xin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/manage_option_text_size" />
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/txt_mannger_update"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/manage_option_text_margin_right"
+            android:layout_weight="1"
+            android:background="@drawable/selector_setting_options_bg"
+            android:drawableTop="@drawable/ico_manage_update"
+            android:gravity="center"
+            android:focusable="true"
+            android:paddingTop="@dimen/manage_icon_padding_top"
+            android:text="@string/geng_xin_ying_yong"
+            android:textColor="@color/white"
+            android:textSize="@dimen/manage_option_text_size" />
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/txt_mannger_uninstal"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/manage_option_text_margin_right"
+            android:layout_weight="1"
+            android:background="@drawable/selector_setting_options_bg"
+            android:drawableTop="@drawable/ico_manage_unload"
+            android:gravity="center"
+            android:paddingTop="@dimen/manage_icon_padding_top"
+            android:text="@string/xie_zai_ying_yong"
+            android:focusable="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/manage_option_text_size" />
+    </com.mapbar.scale.ScaleLinearLayout>
+
+    <com.mapbar.scale.ScaleLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/manage_content_margin_left"
+        android:layout_marginTop="@dimen/manage_content_margin_top"
+        android:layout_weight="1" >
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/txt_mannger_seting"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/manage_option_text_margin_right"
+            android:layout_weight="1"
+            android:background="@drawable/selector_setting_options_bg"
+            android:drawableTop="@drawable/ico_manage_setting"
+            android:gravity="center"
+            android:paddingTop="@dimen/manage_icon_padding_top"
+            android:focusable="true"
+            android:text="@string/she_zhi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/manage_option_text_size" />
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/txt_mannger_help"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/manage_option_text_margin_right"
+            android:layout_weight="1"
+            android:background="@drawable/selector_setting_options_bg"
+            android:drawableTop="@drawable/ico_manage_help"
+            android:gravity="center"
+            android:paddingTop="@dimen/manage_icon_padding_top"
+            android:focusable="true"
+            android:text="@string/bang_zhu"
+            android:textColor="@color/white"
+            android:textSize="@dimen/manage_option_text_size" />
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/txt_mannger_contact"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/manage_option_text_margin_right"
+            android:layout_weight="1"
+            android:background="@drawable/selector_setting_options_bg"
+            android:drawableTop="@drawable/ico_manage_contact_our"
+            android:gravity="center"
+            android:paddingTop="@dimen/manage_icon_padding_top"
+            android:focusable="true"
+            android:text="@string/lian_xi_wo_men"
+            android:textColor="@color/white"
+            android:textSize="@dimen/manage_option_text_size" />
+    </com.mapbar.scale.ScaleLinearLayout>
+
+</com.mapbar.scale.ScaleLinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <com.mapbar.scale.ScaleLinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_menu_shade_normal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/txt_detail"
+            style="@style/textAppearanceXXXLarge"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:background="@drawable/txt_shade_state"
+            android:gravity="center"
+            android:text="@string/detail_detail"
+            android:textColor="@drawable/txt_color_state" />
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/txt_common"
+            style="@style/textAppearanceXXXLarge"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:background="@drawable/txt_shade_state"
+            android:gravity="center"
+            android:text="@string/detail_common"
+            android:textColor="@drawable/txt_color_state" />
+    </com.mapbar.scale.ScaleLinearLayout>
+
+    <com.mapbar.scale.ScaleLinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="vertical" >
+
+        <com.mapbar.scale.ScaleFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical" >
+
+            <include layout="@layout/layout_app_details_title" />
+        </com.mapbar.scale.ScaleFrameLayout>
+
+        <com.mapbar.scale.ScaleLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="19"
+            android:orientation="vertical" >
+
+            <com.mapbar.scale.ScaleFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <include
+                    android:id="@+id/lv_detail"
+                    layout="@layout/layout_detail_detail"
+                    android:visibility="visible" />
+
+                <include
+                    android:id="@+id/lv_common"
+                    layout="@layout/layout_detail_comom"
+                    android:visibility="gone" />
+            </com.mapbar.scale.ScaleFrameLayout>
+        </com.mapbar.scale.ScaleLinearLayout>
+    </com.mapbar.scale.ScaleLinearLayout>
+
+</com.mapbar.scale.ScaleLinearLayout>

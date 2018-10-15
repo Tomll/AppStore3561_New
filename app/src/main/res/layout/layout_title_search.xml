@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="5dp">
+
+    <com.mapbar.scale.ScaleLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/search_bar_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.mapbar.scale.ScaleLinearLayout
+            android:id="@+id/lny_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/shade_focus_state"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <com.mapbar.scale.ScaleImageView
+                android:id="@+id/imageView_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ico_search_icon" />
+        </com.mapbar.scale.ScaleLinearLayout>
+
+        <com.mapbar.scale.ScaleEditText
+            android:id="@+id/edtTxt_search_content"
+            style="@style/textAppearanceXXLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="@string/tv_searchResult_edithint"
+            android:imeOptions="actionDone|flagNoExtractUi"
+            android:singleLine="true"
+            android:textColor="@color/gray">
+        </com.mapbar.scale.ScaleEditText>
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/txt_search_count"
+            style="@style/textAppearanceXLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="10个结果"
+            android:textColor="@color/gray"
+            android:visibility="gone" />
+
+        <com.mapbar.scale.ScaleLinearLayout
+            android:id="@+id/lny_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/shade_focus_state"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <com.mapbar.scale.ScaleImageView
+                android:id="@+id/imageView_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ico_revoke" />
+        </com.mapbar.scale.ScaleLinearLayout>
+    </com.mapbar.scale.ScaleLinearLayout>
+
+</com.mapbar.scale.ScaleLinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 标题行 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="@drawable/line_vertical"
+    android:orientation="horizontal"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="@string/biao_sheng_bang"
+            android:textColor="@color/gray"
+            android:textSize="30dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lVi_surge"
+            style="@style/base_listView_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:fadingEdge="none"
+            android:listSelector="#00000000">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="@string/jing_dian_bang"
+            android:textColor="@color/gray"
+            android:textSize="30dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lVi_sutra"
+            style="@style/base_listView_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:fadingEdge="none"
+            android:listSelector="#00000000">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="page_bg">#1f252b</color>-->
+    <color name="page_bg">#202024</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="txt_normal">#7b8388</color>
+    <color name="txt_press">#ffffff</color>
+    <color name="gray">#8e969b</color>
+    <color name="blue">#0099ff</color>
+    <color name="grayForSearch">#474b4e</color>
+    <color name="yellowForDetails">#ffff00</color>
+
+
+     <color name="deep_gray">#606467</color>
+     <color name="edit_hint_textcolor">#b5b5b5</color>
+     <color name="blue_details">#3c69da</color>
+     <color name="gray_details_edittext">#7e8388</color>
+     
+</resources>

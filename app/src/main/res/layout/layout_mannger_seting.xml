@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.mapbar.scale.ScaleImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_horizontal" />
+
+    <com.mapbar.scale.ScaleRelativeLayout
+        android:id="@+id/ral_mannger_setting_net"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:background="@drawable/shade_focus_state">
+
+        <com.mapbar.scale.ScaleTextView
+            style="@style/textAppearanceXXLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setting_item_margin_left"
+            android:text="@string/net_setting_name"
+            android:textColor="@color/gray" />
+
+        <com.mapbar.scale.ScaleCheckBox
+            android:id="@+id/cb_net_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/setting_item_margin_right"
+            android:background="@drawable/selector_on_off"
+            android:button="@null"
+            android:checked="true" />
+
+        <com.mapbar.scale.ScaleImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/setting_item_divider_margin_left"
+            android:background="@drawable/line_horizontal" />
+    </com.mapbar.scale.ScaleRelativeLayout>
+
+    <com.mapbar.scale.ScaleRelativeLayout
+        android:id="@+id/ral_mannger_setting_clear_apk"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:background="@drawable/shade_focus_state">
+
+        <com.mapbar.scale.ScaleTextView
+            style="@style/textAppearanceXXLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setting_item_margin_left"
+            android:text="@string/apppackage_clear_name"
+            android:textColor="@color/gray" />
+
+        <com.mapbar.scale.ScaleCheckBox
+            android:id="@+id/img_clear_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/setting_item_margin_right"
+            android:background="@drawable/selector_on_off"
+            android:button="@null"
+            android:checked="false" />
+
+        <com.mapbar.scale.ScaleImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/setting_item_divider_margin_left"
+            android:background="@drawable/line_horizontal" />
+    </com.mapbar.scale.ScaleRelativeLayout>
+
+    <com.mapbar.scale.ScaleRelativeLayout
+        android:id="@+id/ral_mannger_setting_clear_cache"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:background="@drawable/shade_focus_state">
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_mannger_setting_clear_cache"
+            style="@style/textAppearanceXXLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setting_item_margin_left"
+            android:text="@string/cache_clear_name"
+            android:textColor="@color/gray" />
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_cache_num"
+            style="@style/textAppearanceXXLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/setting_item_margin_right"
+            android:gravity="center"
+            android:text="计算中..."
+            android:textColor="@color/gray" />
+
+        <com.mapbar.scale.ScaleImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/setting_item_divider_margin_left"
+            android:background="@drawable/line_horizontal" />
+    </com.mapbar.scale.ScaleRelativeLayout>
+
+    <com.mapbar.scale.ScaleRelativeLayout
+        android:id="@+id/ral_mannger_setting_check_version"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:background="@drawable/shade_focus_state">
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_mannger_setting_check_version"
+            style="@style/textAppearanceXXLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setting_item_margin_left"
+            android:text="@string/check_update_name"
+            android:textColor="@color/gray" />
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_version_name"
+            style="@style/textAppearanceXXLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/setting_item_margin_right"
+            android:text="当前版本1.0.1"
+            android:textColor="@color/gray" />
+    </com.mapbar.scale.ScaleRelativeLayout>
+
+</com.mapbar.scale.ScaleLinearLayout>

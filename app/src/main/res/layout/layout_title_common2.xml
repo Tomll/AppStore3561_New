@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 标题行 -->
+<com.mapbar.scale.ScaleRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_title"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@color/page_bg" >
+
+    <!-- 左侧图标 -->
+<!--
+    <com.mapbar.scale.ScaleLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true">
+
+         <com.mapbar.scale.ScaleLinearLayout
+             android:id="@+id/fv_left"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_gravity="center_vertical"
+             android:focusable="true"
+             android:background="@drawable/shade_focus_state">
+
+             <com.mapbar.scale.ScaleImageView
+                 android:id="@+id/imgView_back"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="center"
+                 android:paddingLeft="20dp"
+                 android:paddingRight="20dp"
+                 android:src="@drawable/iv_back"
+                 android:visibility="visible" />
+
+             <com.mapbar.scale.ScaleTextView
+                 android:id="@+id/tv_second_title"
+                 style="@style/textAppearanceXXXXLarge"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_centerVertical="true"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:paddingLeft="2dp"
+                 android:paddingRight="2dp"
+                 android:text="推荐"
+                 android:textColor="@color/white"
+                 android:visibility="gone" />
+        </com.mapbar.scale.ScaleLinearLayout>
+    </com.mapbar.scale.ScaleLinearLayout>-->
+
+    <!-- 主标题 -->
+
+    <com.mapbar.scale.ScaleTextView
+        android:id="@+id/tv_first_title"
+        style="@style/textAppearanceXXLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="推荐"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/img_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/line_horizontal" />
+
+    <!-- 右侧图标 -->
+
+<!--    <com.mapbar.scale.ScaleFrameLayout
+        android:id="@+id/fv_right"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <com.wedrive.welink.appstore.app.widget.CircularImage
+            android:id="@+id/iv_login"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iv_user_login"
+            android:focusable="true"
+            android:background="@drawable/shade_focus_state"
+            android:visibility="invisible" />
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_third_title"
+            style="@style/textAppearanceXXXXLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:focusable="true"
+            android:background="@drawable/shade_focus_state"
+            android:visibility="visible"/>
+    </com.mapbar.scale.ScaleFrameLayout>
+
+    <ImageView
+        android:id="@+id/img_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/line_horizontal"
+        android:visibility="invisible" />-->
+
+</com.mapbar.scale.ScaleRelativeLayout>

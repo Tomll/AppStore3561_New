@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.mapbar.scale.ScaleImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_horizontal" />
+
+    <com.mapbar.scale.ScaleRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/manager_contact_content_margintop">
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_net_address"
+            style="@style/textAppearanceXLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shade_focus_state"
+            android:focusable="true"
+            android:padding="2dp"
+            android:text="@string/wedrive_address"
+            android:textColor="@color/gray" />
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_qq_num"
+            style="@style/textAppearanceXLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_net_address"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/manager_contact_content_line_spacing"
+            android:background="@drawable/shade_focus_state"
+            android:focusable="true"
+            android:padding="2dp"
+            android:text="@string/wedrive_qq"
+            android:textColor="@color/gray" />
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_weixin"
+            style="@style/textAppearanceXLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_qq_num"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/manager_contact_content_line_spacing"
+            android:background="@drawable/shade_focus_state"
+            android:focusable="true"
+            android:padding="2dp"
+            android:text="@string/wedrive_weixin"
+            android:textColor="@color/gray" />
+    </com.mapbar.scale.ScaleRelativeLayout>
+
+</com.mapbar.scale.ScaleLinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_base"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shade_focus_state"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="15dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="15dp">
+
+    <com.mapbar.scale.ScaleRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/manager_item_common_appinfo_height"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.mapbar.scale.ScaleImageView
+            android:id="@+id/img_icon"
+            android:layout_width="@dimen/manager_item_common_appicon_width"
+            android:layout_height="@dimen/manager_item_common_appicon_width" />
+
+        <com.mapbar.scale.ScaleImageView
+            android:id="@+id/img_icon_rz"
+            android:layout_width="@dimen/manager_item_common_appicon_width"
+            android:layout_height="@dimen/manager_item_common_appicon_width"
+            android:background="@drawable/ico_app_official"
+            android:visibility="invisible" />
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_app_size"
+            style="@style/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/img_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@id/img_icon"
+            android:layout_below="@id/img_icon"
+            android:gravity="center_horizontal|bottom"
+            android:text=""
+            android:textColor="@color/gray" />
+
+        <com.mapbar.scale.ScaleLinearLayout
+            android:id="@+id/layout_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/manager_item_common_appinfo_height"
+            android:layout_marginLeft="@dimen/manager_item_common_appdesc_marginleft"
+            android:layout_toRightOf="@id/img_icon"
+            android:orientation="vertical">
+
+            <com.mapbar.scale.ScaleLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <com.mapbar.scale.ScaleTextView
+                    android:id="@+id/tv_app_name"
+                    style="@style/textAppearanceSMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:gravity="top"
+                    android:text=""
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <com.mapbar.scale.ScaleTextView
+                    android:id="@+id/tv_app_desc"
+                    style="@style/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/gray" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <RatingBar
+                    android:id="@+id/rb_app"
+                    style="@style/SmallRatingBar"
+                    android:layout_width="wrap_content"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="0" />
+
+            </com.mapbar.scale.ScaleLinearLayout>
+
+            <com.mapbar.scale.ScaleRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+                <com.mapbar.scale.ScaleImageView
+                    android:id="@+id/imgView_details_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ico_load" />
+
+                <com.mapbar.scale.ScaleImageView
+                    android:id="@+id/imgView_details_instal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ico_install"
+                    android:visibility="gone" />
+
+                <com.mapbar.scale.ScaleImageView
+                    android:id="@+id/imgView_details_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ico_open"
+                    android:visibility="gone" />
+
+                <com.mapbar.scale.ScaleImageView
+                    android:id="@+id/imgView_details_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ico_update"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/lcb_download_progress"
+                    style="@style/mProgress_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:max="100"
+                    android:progress="0"
+                    android:visibility="gone" />
+            </com.mapbar.scale.ScaleRelativeLayout>
+        </com.mapbar.scale.ScaleLinearLayout>
+    </com.mapbar.scale.ScaleRelativeLayout>
+</com.mapbar.scale.ScaleLinearLayout>

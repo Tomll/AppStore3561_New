@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <com.mapbar.scale.ScaleLinearLayout
+        android:id="@+id/lv_search_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" >
+        <include layout="@layout/layout_title_search" />
+    </com.mapbar.scale.ScaleLinearLayout>-->
+
+    <com.mapbar.scale.ScaleLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.mapbar.scale.ScaleLinearLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_menu_shade_normal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <com.mapbar.scale.ScaleTextView
+                android:id="@+id/txt_recom"
+                style="@style/textAppearanceXXXLarge"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/txt_shade_state"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/app_store_recom"
+                android:textColor="@drawable/txt_color_state" />
+
+            <com.mapbar.scale.ScaleTextView
+                android:id="@+id/txt_search"
+                style="@style/textAppearanceXXXLarge"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/txt_shade_state"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/app_store_search"
+                android:textColor="@drawable/txt_color_state" />
+
+            <com.mapbar.scale.ScaleTextView
+                android:id="@+id/txt_list"
+                style="@style/textAppearanceXXXLarge"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/txt_shade_state"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/app_store_list"
+                android:textColor="@drawable/txt_color_state" />
+
+            <com.mapbar.scale.ScaleTextView
+                android:id="@+id/txt_mannger"
+                style="@style/textAppearanceXXXLarge"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/txt_shade_state"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/app_store_mannger"
+                android:textColor="@drawable/txt_color_state" />
+        </com.mapbar.scale.ScaleLinearLayout>
+
+        <com.mapbar.scale.ScaleLinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <com.mapbar.scale.ScaleLinearLayout
+                android:id="@+id/lv_search_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" >
+                <include layout="@layout/layout_title_search" />
+            </com.mapbar.scale.ScaleLinearLayout>
+
+            <com.mapbar.scale.ScaleLinearLayout
+                android:id="@+id/lv_title_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:visibility="visible" >
+                <include
+                    layout="@layout/layout_title_common2" />
+            </com.mapbar.scale.ScaleLinearLayout>
+
+            <com.mapbar.scale.ScaleFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/lv_recom"
+                    layout="@layout/layout_home_recom"
+                    android:visibility="visible" />
+
+                <include
+                    android:id="@+id/lv_search"
+                    layout="@layout/layout_home_search"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/lv_list"
+                    layout="@layout/layout_home_list"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/lv_mannger"
+                    layout="@layout/layout_home_mannger"
+                    android:visibility="gone" />
+            </com.mapbar.scale.ScaleFrameLayout>
+        </com.mapbar.scale.ScaleLinearLayout>
+
+    </com.mapbar.scale.ScaleLinearLayout>
+</com.mapbar.scale.ScaleRelativeLayout>

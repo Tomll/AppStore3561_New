@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shape_detail_dialog_bg"
+    android:minWidth="146dp"
+    android:orientation="vertical">
+
+    <com.mapbar.scale.ScaleTextView
+        android:id="@+id/tv_title"
+        style="@style/textAppearanceXLarge"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="提 示"
+        android:textColor="@color/blue_details" />
+
+    <com.mapbar.scale.ScaleLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@drawable/line_horizontal" />
+
+    <com.mapbar.scale.ScaleTextView
+        android:id="@+id/tv_desc"
+        style="@style/textAppearanceXXLarge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="25dip"
+        android:autoLink="web"
+        android:background="@null"
+        android:gravity="center"
+        android:text="确定删除该数据?"
+        android:textColor="@color/gray" />
+
+    <com.mapbar.scale.ScaleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dip"
+        android:background="@drawable/line_horizontal" />
+
+    <com.mapbar.scale.ScaleLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="46dp">
+
+        <com.mapbar.scale.ScaleButton
+            android:id="@+id/btn_ok"
+            style="@style/textAppearanceXLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="center"
+            android:padding="6dip"
+            android:text="确定"
+            android:textColor="@color/blue_details" />
+
+    </com.mapbar.scale.ScaleLinearLayout>
+
+</com.mapbar.scale.ScaleLinearLayout>

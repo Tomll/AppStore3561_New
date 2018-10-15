@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="220dp"
+    android:layout_height="120dp"
+    android:gravity="center"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <com.mapbar.scale.ScaleTextView
+        android:id="@+id/tv_camera"
+        style="@style/textAppearanceXXXXLarge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@null"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="拍照"
+        android:textColor="#747470" />
+
+    <ImageView
+        android:id="@+id/img_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#b6b6b6" />
+
+    <com.mapbar.scale.ScaleTextView
+        android:id="@+id/tv_photo"
+        style="@style/textAppearanceXXXXLarge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@null"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="照片选取"
+        android:textColor="#747470" />
+
+</com.mapbar.scale.ScaleLinearLayout>

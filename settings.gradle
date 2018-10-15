@@ -1,0 +1,2 @@
+include ':AutoaiAppStore'
+project(":AutoaiAppStore").projectDir = file("../AutoaiAppStore/app")

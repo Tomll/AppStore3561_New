@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <files-path name="files-path" path="mapbar/" /> <!-- 对应 Context.getFilesDir() 方法 -->
+    <cache-path name="cache-path" path="mapbar/" /> <!-- 对应 应 getCacheDir() 方法 -->
+    <external-path name="external-path" path="mapbar/" /> <!-- 对应 Environment.getExternalStorageDirectory() 方法 -->
+    <external-files-path name="external-files-path" path="mapbar/" /> <!-- 对应 Context.getExternalFilesDir() 方法 -->
+    <external-cache-path name="external-cache-path" path="mapbar/" /> <!-- 对应 Context.getExternalCacheDir() 方法 -->
+</paths>

@@ -1,0 +1,210 @@
+<com.mapbar.scale.ScaleRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.mapbar.scale.ScaleFrameLayout
+        android:id="@+id/imgView_appicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_detail_appicon_marginleft"
+        android:layout_marginTop="@dimen/app_detail_appicon_margintop" >
+
+        <com.mapbar.scale.ScaleImageView
+            android:id="@+id/imageView_app_icon"
+            android:layout_width="@dimen/manager_item_common_appicon_width"
+            android:layout_height="@dimen/manager_item_common_appicon_width"
+            android:gravity="center" />
+
+        <com.mapbar.scale.ScaleImageView
+            android:id="@+id/imageView_official"
+            android:layout_width="@dimen/manager_item_common_appicon_width"
+            android:layout_height="@dimen/manager_item_common_appicon_width"
+            android:src="@drawable/ico_app_official" />
+    </com.mapbar.scale.ScaleFrameLayout>
+
+    <com.mapbar.scale.ScaleTextView
+        android:id="@+id/tv_details_appTitle"
+        style="@style/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_detail_appname_marginleft"
+        android:layout_marginTop="@dimen/app_detail_appname_margintop"
+        android:layout_toRightOf="@+id/imgView_appicon"
+        android:textColor="@color/white" />
+
+    <com.mapbar.scale.ScaleLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_details_appTitle"
+        android:layout_below="@+id/tv_details_appTitle"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.mapbar.scale.ScaleLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RatingBar
+                android:id="@+id/rtb_app_class"
+                style="@style/SmallRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:isIndicator="true"
+                android:numStars="5" />
+
+            <com.mapbar.scale.ScaleTextView
+                android:id="@+id/tv_details_download_times"
+                style="@style/textAppearanceSMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/rtb_app_class"
+                android:layout_marginLeft="@dimen/app_detail_download_count_marginleft"
+                android:layout_toRightOf="@+id/rtb_app_class"
+                android:textColor="@color/gray" />
+
+            <com.mapbar.scale.ScaleTextView
+                android:id="@+id/tv_details_app_size"
+                style="@style/textAppearanceSMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_details_download_times"
+                android:layout_alignBottom="@id/tv_details_download_times"
+                android:layout_marginLeft="@dimen/app_detail_app_size_marginleft"
+                android:layout_toRightOf="@+id/tv_wedrive_officially_recognised"
+                android:textColor="@color/gray" />
+        </com.mapbar.scale.ScaleLinearLayout>
+
+        <ProgressBar
+            android:id="@+id/lcb_download_progress"
+            style="@style/mProgress_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_alignLeft="@+id/tv_namel"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_below="@id/tv_namel"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            android:progress="0"
+            android:visibility="gone" />
+    </com.mapbar.scale.ScaleLinearLayout>
+
+    <com.mapbar.scale.ScaleImageView
+        android:id="@+id/imgView_details_recognised"
+        android:layout_width="@dimen/app_detail_app_renz_icon"
+        android:layout_height="@dimen/app_detail_app_renz_icon"
+        android:layout_alignBottom="@+id/tv_details_appTitle"
+        android:layout_marginLeft="@dimen/app_detail_app_renz_icon_marginleft"
+        android:layout_toRightOf="@+id/tv_details_appTitle"
+        android:src="@drawable/ico_recognised"
+        android:visibility="invisible" />
+
+    <com.mapbar.scale.ScaleTextView
+        android:id="@+id/tv_wedrive_officially_recognised"
+        style="@style/textAppearanceSMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgView_details_recognised"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imgView_details_recognised"
+        android:text="@string/tv_officially_recognised"
+        android:textColor="@color/yellowForDetails"
+        android:visibility="invisible" />
+
+    <com.mapbar.scale.ScaleLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/app_detail_appname_marginleft"
+        android:orientation="horizontal">
+
+        <com.mapbar.scale.ScaleImageView
+            android:id="@+id/imgView_details_download"
+            android:layout_width="@dimen/app_detail_app_button_width"
+            android:layout_height="@dimen/app_detail_app_button_height"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_load"
+            android:padding="1dp"
+            android:focusable="true"
+            android:background="@drawable/shade_focus_state"/>
+
+        <com.mapbar.scale.ScaleImageView
+            android:id="@+id/imgView_details_pause"
+            android:layout_width="@dimen/app_detail_app_button_width"
+            android:layout_height="@dimen/app_detail_app_button_height"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_pause"
+            android:visibility="gone"
+            android:padding="1dp"
+            android:focusable="true"
+            android:background="@drawable/shade_focus_state"/>
+
+        <com.mapbar.scale.ScaleImageView
+            android:id="@+id/imgView_details_start"
+            android:layout_width="@dimen/app_detail_app_button_width"
+            android:layout_height="@dimen/app_detail_app_button_height"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_start"
+            android:visibility="gone"
+            android:padding="1dp"
+            android:focusable="true"
+            android:background="@drawable/shade_focus_state"/>
+
+        <com.mapbar.scale.ScaleImageView
+            android:id="@+id/imgView_details_reset"
+            android:layout_width="@dimen/app_detail_app_button_width"
+            android:layout_height="@dimen/app_detail_app_button_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ico_reset"
+            android:visibility="gone"
+            android:padding="1dp"
+            android:focusable="true"
+            android:background="@drawable/shade_focus_state"/>
+
+        <com.mapbar.scale.ScaleImageView
+            android:id="@+id/imgView_details_instal"
+            android:layout_width="@dimen/app_detail_app_button_width"
+            android:layout_height="@dimen/app_detail_app_button_height"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_detail_install"
+            android:visibility="gone"
+            android:padding="1dp"
+            android:focusable="true"
+            android:background="@drawable/shade_focus_state"/>
+
+        <com.mapbar.scale.ScaleImageView
+            android:id="@+id/imgView_details_open"
+            android:layout_width="@dimen/app_detail_app_button_width"
+            android:layout_height="@dimen/app_detail_app_button_height"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_open"
+            android:visibility="gone"
+            android:padding="1dp"
+            android:focusable="true"
+            android:background="@drawable/shade_focus_state"/>
+
+        <com.mapbar.scale.ScaleImageView
+            android:id="@+id/imgView_details_update"
+            android:layout_width="@dimen/app_detail_app_button_width"
+            android:layout_height="@dimen/app_detail_app_button_height"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_update"
+            android:visibility="gone"
+            android:padding="1dp"
+            android:focusable="true"
+            android:background="@drawable/shade_focus_state"/>
+    </com.mapbar.scale.ScaleLinearLayout>
+
+    <com.mapbar.scale.ScaleImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/line_horizontal" />
+
+</com.mapbar.scale.ScaleRelativeLayout>

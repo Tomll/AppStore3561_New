@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:minHeight="60dp"
+    android:minWidth="220dp"
+    android:orientation="vertical" >
+
+    <DatePicker
+        android:id="@+id/datepicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+<!--     <com.mapbar.scale.ScaleLinearLayout -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_marginTop="10dp" -->
+<!--         android:layout_marginBottom="10dp" -->
+<!--         android:background="@null" -->
+<!--         android:gravity="center" -->
+<!--         android:orientation="horizontal" > -->
+
+<!--         <com.mapbar.scale.ScaleButton -->
+<!--             android:id="@+id/btn_submit" -->
+<!--             style="@style/textAppearanceXXXLarge" -->
+<!--             android:layout_width="0dip" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginLeft="20dp" -->
+<!--             android:layout_marginRight="10dp" -->
+<!--             android:layout_weight="1.0" -->
+<!--             android:background="@drawable/bluetooth_blue" -->
+<!--             android:gravity="center" -->
+<!--             android:minHeight="@dimen/button_min_height" -->
+<!--             android:text="确定" -->
+<!--             android:textColor="#ffff" /> -->
+
+<!--         <com.mapbar.scale.ScaleButton -->
+<!--             android:id="@+id/btn_cancel" -->
+<!--             style="@style/textAppearanceXXXLarge" -->
+<!--             android:layout_width="0dip" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginLeft="10dp" -->
+<!--             android:layout_marginRight="20dp" -->
+<!--             android:layout_weight="1.0" -->
+<!--             android:background="@drawable/bluetooth_green" -->
+<!--             android:gravity="center" -->
+<!--             android:minHeight="@dimen/button_min_height" -->
+<!--             android:text="取消" -->
+<!--             android:textColor="#ffff" /> -->
+<!--     </com.mapbar.scale.ScaleLinearLayout> -->
+
+</com.mapbar.scale.ScaleLinearLayout>

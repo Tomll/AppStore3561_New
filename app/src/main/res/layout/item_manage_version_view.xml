@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 标题行 -->
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@drawable/shade_focus_state">
+
+    <com.mapbar.scale.ScaleRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="20dp" >
+
+        <com.mapbar.scale.ScaleLinearLayout
+            android:id="@+id/lv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical" >
+
+            <com.mapbar.scale.ScaleFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.mapbar.scale.ScaleImageView
+                    android:id="@+id/imageView_app_icon"
+                    android:layout_width="@dimen/manager_item_common_appicon_width"
+                    android:layout_height="@dimen/manager_item_common_appicon_width"
+                    android:gravity="center" />
+
+                <com.mapbar.scale.ScaleImageView
+                    android:id="@+id/imageView_official"
+                    android:layout_width="@dimen/manager_item_common_appicon_width"
+                    android:layout_height="@dimen/manager_item_common_appicon_width"
+                    android:src="@drawable/ico_app_official" />
+            </com.mapbar.scale.ScaleFrameLayout>
+        </com.mapbar.scale.ScaleLinearLayout>
+
+        <com.mapbar.scale.ScaleLinearLayout
+            android:id="@+id/lv_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/lv_right"
+            android:layout_toRightOf="@+id/lv_left"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.mapbar.scale.ScaleLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <com.mapbar.scale.ScaleTextView
+                    android:id="@+id/tv_app_name"
+                    style="@style/textAppearanceXLarge"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/white" />
+
+                <com.mapbar.scale.ScaleTextView
+                    android:id="@+id/tv_app_size"
+                    style="@style/textAppearanceMedium"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/gray" />
+            </com.mapbar.scale.ScaleLinearLayout>
+
+            <ProgressBar
+                android:id="@+id/lcb_download_progress"
+                style="@style/mProgress_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="20dp"
+                android:max="100"
+                android:progress="0"
+                android:visibility="invisible" />
+        </com.mapbar.scale.ScaleLinearLayout>
+
+        <com.mapbar.scale.ScaleLinearLayout
+            android:id="@+id/lv_right"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <com.mapbar.scale.ScaleImageView
+                android:id="@+id/imageView_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ico_update" />
+            
+              <com.mapbar.scale.ScaleImageView
+                android:id="@+id/imageView_install"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ico_install" 
+                android:visibility="gone" />
+
+            <com.mapbar.scale.ScaleImageView
+                android:id="@+id/imageView_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ico_start"
+                android:visibility="gone" />
+            
+            <com.mapbar.scale.ScaleImageView
+                android:id="@+id/imageView_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ico_pause"
+                android:visibility="gone" />
+
+            <com.mapbar.scale.ScaleImageView
+                android:id="@+id/imageView_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ico_reset"
+                android:visibility="gone" />
+        </com.mapbar.scale.ScaleLinearLayout>
+    </com.mapbar.scale.ScaleRelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/line_horizontal" />
+
+</com.mapbar.scale.ScaleLinearLayout>

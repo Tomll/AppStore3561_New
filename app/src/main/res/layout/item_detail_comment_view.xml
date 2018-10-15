@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp"
+    android:background="@drawable/shade_focus_state">
+
+    <com.mapbar.scale.ScaleLinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <com.wedrive.welink.appstore.app.widget.CircularImage
+            android:id="@+id/imgView_head"
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:scaleType="fitXY" />
+    </com.mapbar.scale.ScaleLinearLayout>
+
+    <com.mapbar.scale.ScaleLinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.mapbar.scale.ScaleTextView
+            android:id="@+id/tv_desc"
+            style="@style/textAppearanceLarge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@color/gray" />
+
+        <com.mapbar.scale.ScaleRelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp" >
+
+            <com.mapbar.scale.ScaleTextView
+                android:id="@+id/tv_date"
+                style="@style/textAppearanceMedium"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:gravity="left|center_vertical"
+                android:text=""
+                android:textColor="@color/deep_gray" />
+
+            <RatingBar
+                android:id="@+id/rb_app"
+                style="@style/SmallRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@+id/tv_date"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:paddingTop="1dp"
+                android:rating="4"
+                android:stepSize="0.1" />
+
+            <com.mapbar.scale.ScaleTextView
+                android:id="@+id/tv_name"
+                style="@style/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/rb_app"
+                android:text=""
+                android:textColor="@color/deep_gray" />
+        </com.mapbar.scale.ScaleRelativeLayout>
+    </com.mapbar.scale.ScaleLinearLayout>
+
+</com.mapbar.scale.ScaleLinearLayout>

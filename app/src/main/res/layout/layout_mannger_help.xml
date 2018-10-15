@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.mapbar.scale.ScaleImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_horizontal" />
+
+    <com.mapbar.scale.ScaleScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:overScrollMode="never"
+        android:scrollbars="@null" >
+
+        <com.mapbar.scale.ScaleLinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.mapbar.scale.ScaleTextView
+                style="@style/textAppearanceXXLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_item_divider_margin_left"
+                android:layout_marginTop="@dimen/help_titile_margintop"
+                android:text="@string/help_question"
+                android:textColor="@color/white" />
+
+            <com.mapbar.scale.ScaleLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_item_divider_margin_left"
+                android:layout_marginTop="@dimen/help_content_margintop"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:background="@drawable/shade_focus_state">
+
+                <com.mapbar.scale.ScaleTextView
+                    style="@style/textAppearanceXLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/help_content_question_name_marginleft"
+                    android:text="@string/help_question_one"
+                    android:textColor="@color/gray" />
+
+                <com.mapbar.scale.ScaleTextView
+                    style="@style/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/help_content_question_content_marginleft"
+                    android:layout_marginRight="@dimen/help_content_question_content_marginright"
+                    android:layout_marginTop="@dimen/help_content_question_content_margintop"
+                    android:lineSpacingExtra="@dimen/help_content_question_content_vertical_spacing"
+                    android:text="@string/help_question_one_answer"
+                    android:textColor="@color/deep_gray" />
+
+                <com.mapbar.scale.ScaleImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/help_titile_margintop"
+                    android:background="@drawable/line_horizontal" />
+            </com.mapbar.scale.ScaleLinearLayout>
+
+            <com.mapbar.scale.ScaleLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_item_divider_margin_left"
+                android:layout_marginTop="@dimen/help_content_margintop"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:background="@drawable/shade_focus_state">
+
+                <com.mapbar.scale.ScaleTextView
+                    style="@style/textAppearanceXLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/help_content_question_name_marginleft"
+                    android:text="@string/help_question_two"
+                    android:textColor="@color/gray" />
+
+                <com.mapbar.scale.ScaleTextView
+                    style="@style/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/help_content_question_content_marginleft"
+                    android:layout_marginRight="@dimen/help_content_question_content_marginright"
+                    android:layout_marginTop="@dimen/help_content_question_content_margintop"
+                    android:lineSpacingExtra="@dimen/help_content_question_content_vertical_spacing"
+                    android:text="@string/help_question_two_answer"
+                    android:textColor="@color/deep_gray" />
+
+                <com.mapbar.scale.ScaleImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/help_titile_margintop"
+                    android:background="@drawable/line_horizontal" />
+            </com.mapbar.scale.ScaleLinearLayout>
+
+            <com.mapbar.scale.ScaleLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_item_divider_margin_left"
+                android:layout_marginTop="@dimen/help_content_margintop"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:background="@drawable/shade_focus_state">
+
+                <com.mapbar.scale.ScaleTextView
+                    style="@style/textAppearanceXLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/help_content_question_name_marginleft"
+                    android:text="@string/help_question_three"
+                    android:textColor="@color/gray" />
+
+                <com.mapbar.scale.ScaleTextView
+                    style="@style/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/help_content_question_content_marginleft"
+                    android:layout_marginRight="@dimen/help_content_question_content_marginright"
+                    android:layout_marginTop="@dimen/help_content_question_content_margintop"
+                    android:lineSpacingExtra="@dimen/help_content_question_content_vertical_spacing"
+                    android:text="@string/help_question_three_answer"
+                    android:textColor="@color/deep_gray" />
+            </com.mapbar.scale.ScaleLinearLayout>
+        </com.mapbar.scale.ScaleLinearLayout>
+    </com.mapbar.scale.ScaleScrollView>
+
+</com.mapbar.scale.ScaleLinearLayout>

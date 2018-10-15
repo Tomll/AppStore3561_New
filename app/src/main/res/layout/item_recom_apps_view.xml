@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 标题行 -->
+<com.mapbar.scale.ScaleLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lny_item"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/shade_focus_state"
+    android:focusable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp">
+
+    <com.mapbar.scale.ScaleFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.wedrive.welink.appstore.app.widget.RoundAngleImageView
+            android:id="@+id/imageView_icon"
+            android:layout_width="@dimen/manager_item_common_appicon_width"
+            android:layout_height="@dimen/manager_item_common_appicon_width"
+            android:scaleType="fitEnd"
+            android:src="@drawable/ico_manage_contact_our" />
+
+        <com.mapbar.scale.ScaleImageView
+            android:id="@+id/imageView_official"
+            android:layout_width="@dimen/manager_item_common_appicon_width"
+            android:layout_height="@dimen/manager_item_common_appicon_width"
+            android:layout_gravity="bottom|right"
+            android:scaleType="fitEnd"
+            android:src="@drawable/ico_app_official" />
+    </com.mapbar.scale.ScaleFrameLayout>
+
+    <com.mapbar.scale.ScaleTextView
+        android:id="@+id/txt_app_name"
+        style="@style/textAppearanceSMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/home_item_app_imagename_padding_buttom"
+        android:layout_marginTop="@dimen/home_item_app_imagename_padding_top"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/white" />
+
+    <com.mapbar.scale.ScaleTextView
+        android:id="@+id/txt_app_description"
+        style="@style/textAppearanceSmall"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="5"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/deep_gray"/>
+
+</com.mapbar.scale.ScaleLinearLayout>
