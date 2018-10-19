@@ -144,25 +144,25 @@ public class DetailPage extends BasePage implements OnClickListener {
 	@Override
 	public void viewWillAppear(int flag) {
 		super.viewWillAppear(flag);
-		MapbarMobStat.onPageStart(mContext,Configs.AppStore_Interface_DetailPage);
+		//9MapbarMobStat.onPageStart(mContext,Configs.AppStore_Interface_DetailPage);
 	}
 
 	@Override
 	public void viewWillDisappear(int flag) {
 		super.viewWillDisappear(flag);
-		MapbarMobStat.onPageEnd(mContext,Configs.AppStore_Interface_DetailPage);
+		//9MapbarMobStat.onPageEnd(mContext,Configs.AppStore_Interface_DetailPage);
 	}
 
 	@Override
 	public void onResume() {
 		super.onResume();
-		//MapbarMobStat.onPageStart(mContext,Configs.AppStore_Interface_DetailPage);
+		//8MapbarMobStat.onPageStart(mContext,Configs.AppStore_Interface_DetailPage);
 	}
 
 	@Override
 	public void onPause() {
 		super.onPause();
-		//MapbarMobStat.onPageEnd(mContext,Configs.AppStore_Interface_DetailPage);
+		//8MapbarMobStat.onPageEnd(mContext,Configs.AppStore_Interface_DetailPage);
 	}
 
 	@Override

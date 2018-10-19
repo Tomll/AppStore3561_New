@@ -11,7 +11,7 @@
     <string name="dialog_loading_pre_install">安装初始化...</string>
     <string name="check_update_version">检查更新版本中，请稍等...</string>
     
-    <string name="app_name">应用商店</string>
+    <string name="app_name">AppStore</string>
     <string name="toast_againto_exit">再按一次退出应用！</string>
     <string name="app_store_recom">推荐</string>
     <string name="app_store_search">搜索</string>

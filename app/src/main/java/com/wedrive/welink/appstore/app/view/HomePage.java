@@ -103,8 +103,8 @@ public class HomePage extends BasePage implements OnClickListener {
     @Override
     public void viewWillAppear(int flag) {
         super.viewWillAppear(flag);
-        MapbarMobStat.onPageStart(mContext, Configs.AppStore_Interface_HomePage);
-        refershToken();
+        //9MapbarMobStat.onPageStart(mContext, Configs.AppStore_Interface_HomePage);
+        //refershToken();
         switch (mSelectViewId) {
             case 1:
                 lv_search_area.setVisibility(View.GONE);
@@ -136,20 +136,20 @@ public class HomePage extends BasePage implements OnClickListener {
     @Override
     public void viewWillDisappear(int flag) {
         super.viewWillDisappear(flag);
-        MapbarMobStat.onPageEnd(mContext, Configs.AppStore_Interface_HomePage);
+        //9MapbarMobStat.onPageEnd(mContext, Configs.AppStore_Interface_HomePage);
     }
 
     @Override
     public void onResume() {
         super.onPause();
-        //MapbarMobStat.onPageStart(mContext, Configs.AppStore_Interface_HomePage);
-        refershToken();
+        //8MapbarMobStat.onPageStart(mContext, Configs.AppStore_Interface_HomePage);
+        //refershToken();
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        //MapbarMobStat.onPageEnd(mContext, Configs.AppStore_Interface_HomePage);
+        //8MapbarMobStat.onPageEnd(mContext, Configs.AppStore_Interface_HomePage);
     }
 
     @Override
@@ -157,7 +157,7 @@ public class HomePage extends BasePage implements OnClickListener {
         super.onReceiveData(arg0, code, obj);
         if (arg0 == getMyViewPosition()) {
             if (code == 10) {
-                refershToken();
+                //refershToken();
                 mHomePageMannger.loadAppInstal();
             }
         }

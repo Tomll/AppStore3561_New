@@ -171,13 +171,13 @@ public class LoginPage extends BasePage implements OnClickListener{
 	@Override
 	public void viewWillAppear(int flag) {
 		super.viewWillAppear(flag);
-		MapbarMobStat.onPageStart(mContext,pageName);
+		//9MapbarMobStat.onPageStart(mContext,pageName);
 	}
 	
 	@Override
 	public void viewWillDisappear(int flag) {
 		super.viewWillDisappear(flag);
-		MapbarMobStat.onPageEnd(mContext,pageName);
+		//9MapbarMobStat.onPageEnd(mContext,pageName);
 	}
 
 	@Override

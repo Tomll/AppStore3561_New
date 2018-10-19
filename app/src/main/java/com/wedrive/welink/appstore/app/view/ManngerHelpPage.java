@@ -28,25 +28,25 @@ public class ManngerHelpPage extends BasePage {
 	public void viewWillAppear(int flag) {
 		super.viewWillAppear(flag);		
 		MainActivity.mMainActivity.setFirstAndSecondTitle("帮助", "管理");
-		MapbarMobStat.onPageStart(mContext,Configs.AppStore_Interface_HelpPage);
+		//9MapbarMobStat.onPageStart(mContext,Configs.AppStore_Interface_HelpPage);
 	}
 	
 	@Override
 	public void viewWillDisappear(int flag) {
 		super.viewWillDisappear(flag);
-		MapbarMobStat.onPageEnd(mContext,Configs.AppStore_Interface_HelpPage);
+		//9MapbarMobStat.onPageEnd(mContext,Configs.AppStore_Interface_HelpPage);
 	}
 
 	@Override
 	public void onResume() {
 		super.onResume();
-		//MapbarMobStat.onPageStart(mContext,Configs.AppStore_Interface_HelpPage);
+		//8MapbarMobStat.onPageStart(mContext,Configs.AppStore_Interface_HelpPage);
 	}
 
 	@Override
 	public void onPause() {
 		super.onPause();
-		//MapbarMobStat.onPageEnd(mContext,Configs.AppStore_Interface_HelpPage);
+		//8MapbarMobStat.onPageEnd(mContext,Configs.AppStore_Interface_HelpPage);
 	}
 	
 	@Override

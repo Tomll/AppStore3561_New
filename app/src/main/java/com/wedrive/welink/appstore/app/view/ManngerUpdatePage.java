@@ -1,13 +1,5 @@
 package com.wedrive.welink.appstore.app.view;
 
-import java.io.File;
-import java.lang.ref.WeakReference;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.List;
-
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -47,6 +39,14 @@ import com.wedrive.welink.appstore.app.model.AppVersion;
 import com.wedrive.welink.appstore.app.provider.SearchProvider;
 import com.wedrive.welink.appstore.app.util.AppUtil;
 import com.wedrive.welink.appstore.app.util.CommonUtil;
+
+import java.io.File;
+import java.lang.ref.WeakReference;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
 
 public class ManngerUpdatePage extends BasePage {
 	
@@ -129,25 +129,25 @@ public class ManngerUpdatePage extends BasePage {
     public void viewWillAppear(int flag) {
         super.viewWillAppear(flag);
         MainActivity.mMainActivity.setFirstAndSecondTitle("更新应用", "管理");
-        MapbarMobStat.onPageStart(mContext, Configs.AppStore_Interface_UpdateAppPage);
+        //9MapbarMobStat.onPageStart(mContext, Configs.AppStore_Interface_UpdateAppPage);
     }
 
     @Override
     public void viewWillDisappear(int flag) {
         super.viewWillDisappear(flag);
-        MapbarMobStat.onPageEnd(mContext, Configs.AppStore_Interface_UpdateAppPage);
+        //9MapbarMobStat.onPageEnd(mContext, Configs.AppStore_Interface_UpdateAppPage);
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        //MapbarMobStat.onPageStart(mContext, Configs.AppStore_Interface_UpdateAppPage);
+        //8MapbarMobStat.onPageStart(mContext, Configs.AppStore_Interface_UpdateAppPage);
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        //MapbarMobStat.onPageEnd(mContext, Configs.AppStore_Interface_UpdateAppPage);
+        //8MapbarMobStat.onPageEnd(mContext, Configs.AppStore_Interface_UpdateAppPage);
     }
 
     /**

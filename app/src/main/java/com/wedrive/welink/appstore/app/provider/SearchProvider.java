@@ -57,9 +57,9 @@ public class SearchProvider extends Provider
 		sbUrl.append(queryString);
 		int pageIndex = Integer.parseInt(paramMap.get("p_index"));
 		if(Configs.isDebug) Log.e(TAG,"loadAppsList:"+sbUrl);
-//		HashMap<String, String> headers = new HashMap<String, String>();
-//		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
-//		setHeaders(headers);
+		HashMap<String, String> headers = new HashMap<String, String>();
+		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
+		setHeaders(headers);
 		return getDataFromNet(HttpRequestType.GET, Configs.REQUEST_CODE_LOAD_APPS_LIST, pageIndex,sbUrl.toString());
 	}
 	
@@ -83,9 +83,9 @@ public class SearchProvider extends Provider
 		}
 		sbUrl.append(queryString);
 		if(Configs.isDebug) Log.e(TAG,"loadBanngerList:"+sbUrl);
-//		HashMap<String, String> headers = new HashMap<String, String>();
-//		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
-//		setHeaders(headers);
+		HashMap<String, String> headers = new HashMap<String, String>();
+		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
+		setHeaders(headers);
 		return getDataFromNet(HttpRequestType.GET, Configs.REQUEST_CODE_RECORD_BANNGER_LIST, -1,sbUrl.toString());
 	}
 	
@@ -108,10 +108,10 @@ public class SearchProvider extends Provider
 			}
 		}
 		sbUrl.append(queryString);
-//		if(Configs.isDebug) Log.e(TAG,"loadAppDetail:"+sbUrl);
-//		HashMap<String, String> headers = new HashMap<String, String>();
-//		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
-//		setHeaders(headers);
+		if(Configs.isDebug) Log.e(TAG,"loadAppDetail:"+sbUrl);
+		HashMap<String, String> headers = new HashMap<String, String>();
+		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
+		setHeaders(headers);
 		return getDataFromNet(HttpRequestType.GET, Configs.REQUEST_CODE_LOAD_APP_DETAIL, -1,sbUrl.toString());
 	}
 	
@@ -134,9 +134,9 @@ public class SearchProvider extends Provider
 		}
 		sbUrl.append(queryString).append("/");
 		if(Configs.isDebug) Log.e(TAG,"checkVersion:"+sbUrl);
-//		HashMap<String, String> headers = new HashMap<String, String>();
-//		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
-//		setHeaders(headers);
+		HashMap<String, String> headers = new HashMap<String, String>();
+		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
+		setHeaders(headers);
 		return getDataFromNet(HttpRequestType.GET, Configs.REQUEST_CODE_APPSTOR_CHECK_VERSION, -1,sbUrl.toString());
 	}
 	
@@ -169,9 +169,9 @@ public class SearchProvider extends Provider
 		}
 		sbUrl.append("/?").append(queryString2);
 		if(Configs.isDebug) Log.e(TAG,"checkVersionApps:"+sbUrl.toString());
-//		HashMap<String, String> headers = new HashMap<String, String>();
-//		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
-//		setHeaders(headers);
+		HashMap<String, String> headers = new HashMap<String, String>();
+		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
+		setHeaders(headers);
 		return getDataFromNet(HttpRequestType.POST, Configs.REQUEST_CODE_CHECK_VERSION_APPS, 1,sbUrl.toString());
 	}
 	
@@ -196,9 +196,9 @@ public class SearchProvider extends Provider
 		sbUrl.append(queryString);
 		int pageIndex = Integer.parseInt(paramMap.get("p_index"));
 		if(Configs.isDebug) Log.e(TAG,"loadAppCommons:"+sbUrl);
-//		HashMap<String, String> headers = new HashMap<String, String>();
-//		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
-//		setHeaders(headers);
+		HashMap<String, String> headers = new HashMap<String, String>();
+		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
+		setHeaders(headers);
 		return getDataFromNet(HttpRequestType.GET, Configs.REQUEST_CODE_LOAD_APP_COMMONS, pageIndex,sbUrl.toString());
 	}
 	
@@ -224,9 +224,9 @@ public class SearchProvider extends Provider
 		}
 		sbUrl.append(queryString);
 		if(Configs.isDebug) Log.e(TAG,"loadAppCommons:"+sbUrl);
-//		HashMap<String, String> headers = new HashMap<String, String>();
-//		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
-//		setHeaders(headers);
+		HashMap<String, String> headers = new HashMap<String, String>();
+		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
+		setHeaders(headers);
 		return getDataFromNet(HttpRequestType.GET, Configs.REQUEST_CODE_LOAD_APP_USER_COMMONS, 1,sbUrl.toString());
 	}
 	
@@ -252,9 +252,9 @@ public class SearchProvider extends Provider
 //		}
 //		sbUrl.append(queryString);
 //		if(Configs.isDebug) Log.e(TAG,"loadAppCommons:"+sbUrl);
-////		HashMap<String, String> headers = new HashMap<String, String>();
-////		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
-////		setHeaders(headers);
+//		HashMap<String, String> headers = new HashMap<String, String>();
+//		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
+//		setHeaders(headers);
 //		return getDataFromNet(HttpRequestType.GET, Configs.REQUEST_CODE_UPDATE_APP_USER_COMMONS, 1,sbUrl.toString());
 //	}
 	
@@ -290,7 +290,7 @@ public class SearchProvider extends Provider
 		if(Configs.isDebug) Log.e(TAG,"upLoadAppCommon:"+sbUrl.toString());
 		HashMap<String, String> headers = new HashMap<String, String>();
 		headers.put("token",token);
-//		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
+		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
 		setHeaders(headers);
 		return getDataFromNet(HttpRequestType.GET, Configs.REQUEST_CODE_UPLOAD_APP_COMMON, 1,sbUrl.toString());
 	}
@@ -314,9 +314,9 @@ public class SearchProvider extends Provider
 		}
 		sbUrl.append(queryString);
 		if(Configs.isDebug) Log.e(TAG,"loadRecomApps:"+sbUrl.toString());
-//		HashMap<String, String> headers = new HashMap<String, String>();
-//		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
-//		setHeaders(headers);
+		HashMap<String, String> headers = new HashMap<String, String>();
+		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
+		setHeaders(headers);
 		return getDataFromNet(HttpRequestType.GET, Configs.REQUEST_CODE_APPS_RECOM_LIST, 1,sbUrl.toString());
 	}
 	
@@ -338,10 +338,10 @@ public class SearchProvider extends Provider
 			}
 		}
 		sbUrl.append(queryString);
-//		if(Configs.isDebug) Log.e(TAG,"loadSearchApps:"+sbUrl.toString());
-//		HashMap<String, String> headers = new HashMap<String, String>();
-//		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
-//		setHeaders(headers);
+		if(Configs.isDebug) Log.e(TAG,"loadSearchApps:"+sbUrl.toString());
+		HashMap<String, String> headers = new HashMap<String, String>();
+		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
+		setHeaders(headers);
 		return getDataFromNet(HttpRequestType.GET, Configs.REQUEST_CODE_SEARCH_APPS_LIST, 1,sbUrl.toString());
 	}
 	
@@ -364,9 +364,9 @@ public class SearchProvider extends Provider
 		}
 		sbUrl.append(queryString);
 		if(Configs.isDebug) Log.e(TAG,"loadRecordLogs:"+sbUrl.toString());
-//		HashMap<String, String> headers = new HashMap<String, String>();
-//		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
-//		setHeaders(headers);
+		HashMap<String, String> headers = new HashMap<String, String>();
+		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
+		setHeaders(headers);
 		return getDataFromNet(HttpRequestType.GET, Configs.REQUEST_CODE_RECORD_LOG_LIST, 1,sbUrl.toString());
 	}
 	
@@ -389,9 +389,9 @@ public class SearchProvider extends Provider
 		}
 		sbUrl.append(queryString);
 		if(Configs.isDebug) Log.e(TAG,"loadBillBoardApps:"+sbUrl.toString());
-//		HashMap<String, String> headers = new HashMap<String, String>();
-//		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
-//		setHeaders(headers);
+		HashMap<String, String> headers = new HashMap<String, String>();
+		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
+		setHeaders(headers);
 		return getDataFromNet(HttpRequestType.GET, Configs.REQUEST_CODE_BILLBOARD_APPS_LIST, 1,sbUrl.toString());
 	}
 	
@@ -425,10 +425,10 @@ public class SearchProvider extends Provider
 			}
 		}
 		sbUrl.append("/?").append(queryString2);
-//		if(Configs.isDebug) Log.e(TAG,"loadInstalApps:"+sbUrl.toString());
-//		HashMap<String, String> headers = new HashMap<String, String>();
-//		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
-//		setHeaders(headers);
+		if(Configs.isDebug) Log.e(TAG,"loadInstalApps:"+sbUrl.toString());
+		HashMap<String, String> headers = new HashMap<String, String>();
+		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
+		setHeaders(headers);
 		return getDataFromNet(HttpRequestType.GET, Configs.REQUEST_CODE_INSTAL_APPS_LIST, 1,sbUrl.toString());
 	}
 	

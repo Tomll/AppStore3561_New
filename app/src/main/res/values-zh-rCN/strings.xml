@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="dialog_loading">更新数据</string>
+    <string name="dialog_loading_fail">下载失败，请重新下载...</string>
+    <string name="dialog_loading_data">加载数据中，请稍等...</string>
+    <string name="dialog_loading_clear">正在清理...</string>
+    <string name="dialog_upload_app_common">提交应用评论...</string>
+    <string name="dialog_loading_net_unconnect">网络不可用，请稍候再试</string>
+    <string name="dialog_loading_net_error">网络错误，请稍候再试</string>
+    <string name="dialog_loading_pre_install">安装初始化...</string>
+    <string name="check_update_version">检查更新版本中，请稍等...</string>
+    
+    <string name="app_name">应用商店</string>
+    <string name="toast_againto_exit">再按一次退出应用！</string>
+    <string name="app_store_recom">推荐</string>
+    <string name="app_store_search">搜索</string>
+    <string name="app_store_list">榜单</string>
+    <string name="app_store_mannger">管理</string>
+    <string name="recom_hot_apps">热门汽车应用</string>
+    <string name="detail_detail">详情</string>
+    <string name="detail_common">评论</string>
+    <string name="btn_show_one">页面1</string>
+    <string name="btn_show_tow">页面2</string>
+    <string name="btn_show_home">首页</string>
+    <string name="biao_sheng_bang">飙升榜</string>
+    <string name="jing_dian_bang">经典榜</string>
+    <string name="xia_zai_zhong_xin">下载中心</string>
+    <string name="geng_xin_ying_yong">更新应用</string>
+    <string name="xie_zai_ying_yong">卸载应用</string>
+    <string name="she_zhi">设置</string>
+    <string name="bang_zhu">帮助</string>
+    <string name="lian_xi_wo_men">联系我们</string>
+
+    <!-- 搜索 -->
+    <string name="title_search_Content">搜索的内容不能为空！</string>
+    <string name="edtTxt_searchContent">大家都在搜:导航</string>
+    <string name="tv_searchResult">搜索结果条目</string>
+    <string name="tv_hotCarAPP">热门汽车应用</string>
+    <string name="tv_searchHistory">搜索历史</string>
+    <string name="tv_cleanHistory">清除历史</string>
+    <string name="tv_searchResult8">微信</string>
+    <string name="tv_searchResult9">图吧卫士盒子</string>
+    <string name="tv_searchResult10">微博</string>
+    <string name="tv_searchResult11">音乐</string>
+    <string name="tv_searchResult_edithint">大家都在搜：导航</string>
+    
+    <!-- 详情 -->
+    <string name="tv_searchResult12">发表</string>
+    <string name="tv_searchResult13">取消</string>
+    <string name="tv_evaluate">评价</string>
+    <string name="tv_details">详情</string>
+    <string name="tv_officially_recognised">官方认证</string>
+    <string name="tv_details_comment_content">评论内容不能为空！</string>
+    <string name="tv_details_comment_content_score">请进行评分！</string>
+    <string name="tv_details_comment_content_short">内容长度少于10个字符！</string>
+    <string name="tv_details_comment_content_long">内容长度大于50个字符！</string>
+
+    <!-- 设置页面 -->    
+    <string name="seting_net_open">2G/3G/4G网络下载已打开</string>
+    <string name="seting_net_close">2G/3G/4G网络下载已关闭</string>
+    <string name="seting_clear_apk_open">自动清除安装包已打开</string>
+    <string name="seting_clear_apk_close">自动清除安装包已关闭</string>
+    <string name="seting_clear_dialog">清理完成</string>
+    <string name="net_setting_name">使用2G/3G/4G网络下载</string>
+    <string name="apppackage_clear_name">安装完成后，自动清除安装包</string>
+    <string name="cache_clear_name">清除缓存内容</string>
+    <string name="check_update_name">检查更新</string>
+    
+    <!-- 联系模块 --> 
+    <string name="help_question">常见问题</string>
+    <string name="help_question_one">什么是Wesmart？</string>
+    <string name="help_question_one_answer">Wesmart是四维智联为客户提供软硬一体的智能终端解决方案，系统支持深度定制，有完整的生态服务体系，为您的出行保驾护航。</string>
+    <string name="help_question_two">下载的应用在哪里可以找到？</string>
+    <string name="help_question_two_answer">您在应用商店下载的应用，安装后会自动添加到Launcher之中，就是这么方便！</string>
+    <string name="help_question_three">如何获得最新应用？</string>
+    <string name="help_question_three_answer">应用商店会经常提供新的应用，也会联合第三方优秀的软件开发者为用户提供更新的应用。您只需要经常关注应用商店，海量应用，唾手可得！</string>
+    <string name="wedrive_address">官   网：http://www.mapbar.com/</string>
+    <string name="wedrive_qq">客服QQ：907915091</string>
+    <string name="wedrive_weixin">客服：4006616677</string>
+    <string name="detail_common_dialog_content_hint">请输入评论10-50个字！</string>
+    
+    <!-- 下载模块 -->
+    <string name="net_unconnect_imp_label">网络不可用，请稍候再试</string>
+    <string name="net_2g_or_3g">移动网络不支持下载，请在设置中打开</string>
+    <string name="apk_version_update">版本更新中，请耐心等待！</string>
+    <string name="apk_version_success">版本更新成功！</string>
+	<string name="apk_version_failure">版本更新失败！</string>
+	<string name="seting_version_alert">已是最新版本！</string>	
+	<string name="no_apk_data_info">没有加载到应用数据信息！</string>
+	<string name="net_is_workAllow_open">您正在使用移动网络下载，是否继续？</string>
+	<string name="net_is_workAllow_close">您设置了移动网络下禁止下载应用，是否继续下载？</string>
+	<string name="net_version_update">发现新版本，点击更新！</string>
+	<string name="net_version_update_workAllow_open">发现新版本，您正在使用移动网络，是否更新？</string>
+	<string name="net_version_update_workAllow_close">发现新版本，您设置了移动网络下禁止下载应用，是否继续更新？</string>	
+	<string name="net_wifi_to_mobile">您的网络环境变为移动网络，下载会消耗流量是否继续？</string>
+	<string name="net_no_stop_download">你的网络已断开，%1$d个下载已暂停。</string>
+	
+	<!-- 账号登录模块 -->
+	<string name="loading_url">页面加载中，请稍后...</string>
+
+</resources>

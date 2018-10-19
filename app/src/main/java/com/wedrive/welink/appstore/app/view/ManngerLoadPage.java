@@ -69,27 +69,27 @@ public class ManngerLoadPage extends BasePage {
     public void viewWillAppear(int flag) {
         super.viewWillAppear(flag);
         MainActivity.mMainActivity.setFirstAndSecondTitle("下载中心", "管理");
-        MapbarMobStat.onPageStart(mContext, Configs.AppStore_Interface_DownloadCenterPage);
+        //9MapbarMobStat.onPageStart(mContext, Configs.AppStore_Interface_DownloadCenterPage);
         if (loadAdapter != null) loadAdapter.notifyDataSetChanged();
     }
 
     @Override
     public void viewWillDisappear(int flag) {
         super.viewWillDisappear(flag);
-        MapbarMobStat.onPageEnd(mContext, Configs.AppStore_Interface_DownloadCenterPage);
+        //9MapbarMobStat.onPageEnd(mContext, Configs.AppStore_Interface_DownloadCenterPage);
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        //MapbarMobStat.onPageStart(mContext, Configs.AppStore_Interface_DownloadCenterPage);
+        //8MapbarMobStat.onPageStart(mContext, Configs.AppStore_Interface_DownloadCenterPage);
         if (loadAdapter != null) loadAdapter.notifyDataSetChanged();
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        //MapbarMobStat.onPageEnd(mContext, Configs.AppStore_Interface_DownloadCenterPage);
+        //8MapbarMobStat.onPageEnd(mContext, Configs.AppStore_Interface_DownloadCenterPage);
     }
 
     /**

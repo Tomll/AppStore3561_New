@@ -1,9 +1,5 @@
 package com.wedrive.welink.appstore.app.view;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
@@ -31,6 +27,10 @@ import com.wedrive.welink.appstore.R;
 import com.wedrive.welink.appstore.app.model.AppInfo;
 import com.wedrive.welink.appstore.app.util.AppUtil;
 import com.wedrive.welink.appstore.app.util.CommonUtil;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class ManngerUninstalPage extends BasePage {
     private final static String TAG = "ManngerUninstalPage";
@@ -189,25 +189,25 @@ public class ManngerUninstalPage extends BasePage {
     public void viewWillAppear(int flag) {
         super.viewWillAppear(flag);
         MainActivity.mMainActivity.setFirstAndSecondTitle("卸载应用", "管理");
-        MapbarMobStat.onPageStart(mContext, Configs.AppStore_Interface_UninstalAppPage);
+        //9MapbarMobStat.onPageStart(mContext, Configs.AppStore_Interface_UninstalAppPage);
     }
 
     @Override
     public void viewWillDisappear(int flag) {
         super.viewWillDisappear(flag);
-        MapbarMobStat.onPageEnd(mContext, Configs.AppStore_Interface_UninstalAppPage);
+        //9MapbarMobStat.onPageEnd(mContext, Configs.AppStore_Interface_UninstalAppPage);
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        //MapbarMobStat.onPageStart(mContext, Configs.AppStore_Interface_UninstalAppPage);
+        //8MapbarMobStat.onPageStart(mContext, Configs.AppStore_Interface_UninstalAppPage);
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        //MapbarMobStat.onPageEnd(mContext, Configs.AppStore_Interface_UninstalAppPage);
+        //8MapbarMobStat.onPageEnd(mContext, Configs.AppStore_Interface_UninstalAppPage);
     }
 
     @Override

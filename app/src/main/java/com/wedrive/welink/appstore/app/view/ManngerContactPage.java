@@ -35,25 +35,25 @@ public class ManngerContactPage extends BasePage implements OnClickListener{
 	public void viewWillAppear(int flag) {
 		super.viewWillAppear(flag);		
 		MainActivity.mMainActivity.setFirstAndSecondTitle("联系我们","管理");
-		MapbarMobStat.onPageStart(mContext,Configs.AppStore_Interface_ContactUsPage);
+		//9MapbarMobStat.onPageStart(mContext,Configs.AppStore_Interface_ContactUsPage);
 	}
 	
 	@Override
 	public void viewWillDisappear(int flag) {
 		super.viewWillDisappear(flag);
-		MapbarMobStat.onPageEnd(mContext,Configs.AppStore_Interface_ContactUsPage);
+		//9MapbarMobStat.onPageEnd(mContext,Configs.AppStore_Interface_ContactUsPage);
 	}
 
 	@Override
 	public void onResume() {
 		super.onResume();
-		//MapbarMobStat.onPageStart(mContext,Configs.AppStore_Interface_ContactUsPage);
+		//8MapbarMobStat.onPageStart(mContext,Configs.AppStore_Interface_ContactUsPage);
 	}
 
 	@Override
 	public void onPause() {
 		super.onPause();
-		//MapbarMobStat.onPageEnd(mContext,Configs.AppStore_Interface_ContactUsPage);
+		//8MapbarMobStat.onPageEnd(mContext,Configs.AppStore_Interface_ContactUsPage);
 	}
 
 	private void initview(View view) {
@@ -77,7 +77,7 @@ public class ManngerContactPage extends BasePage implements OnClickListener{
 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				mContext.getApplicationContext().startActivity(intent);
 			} catch (Exception e) {
-				mAif.showAlert("主人，请前安装浏览器然后再试试");
+				mAif.showAlert("主人，请先安装浏览器然后再试试");
 			}
 			break;
 		case R.id.tv_qq_num:

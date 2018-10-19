@@ -1,13 +1,5 @@
 package com.wedrive.welink.appstore.app.view;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Rect;
@@ -42,6 +34,14 @@ import com.wedrive.welink.appstore.app.model.AppBannger;
 import com.wedrive.welink.appstore.app.model.AppBean;
 import com.wedrive.welink.appstore.app.provider.SearchProvider;
 import com.wedrive.welink.appstore.app.util.CommonUtil;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
 
 public class HomePageRecom {
 
@@ -209,7 +209,7 @@ public class HomePageRecom {
                         MapbarMobStat.onEvent(mContext,"F0118","广告应用");
                     } else if ("2".equals(bean.bannger_type)) {//功能
                         String index = bean.click_url;
-                        if ("0001".equals(index)) {//联系我们
+                        if ("0001".equals(index)) {//帮助(关于我们)
                             mAif.showPage(Configs.VIEW_POSITION_HOME, Configs.VIEW_POSITION_MANNGER_HELP, null, true, null, null);
                         }
                     } else if ("3".equals(bean.bannger_type)) {//专题

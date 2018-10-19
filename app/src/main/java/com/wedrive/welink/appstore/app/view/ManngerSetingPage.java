@@ -173,25 +173,25 @@ public class ManngerSetingPage extends BasePage implements OnClickListener {
 	public void viewWillAppear(int flag) {
 		super.viewWillAppear(flag);		
 		MainActivity.mMainActivity.setFirstAndSecondTitle("设置", "管理");
-		MapbarMobStat.onPageStart(mContext,Configs.AppStore_Interface_SettingsPage);
+		//9MapbarMobStat.onPageStart(mContext,Configs.AppStore_Interface_SettingsPage);
 	}
 	
 	@Override
 	public void viewWillDisappear(int flag) {
 		super.viewWillDisappear(flag);
-		MapbarMobStat.onPageEnd(mContext,Configs.AppStore_Interface_SettingsPage);
+		//9MapbarMobStat.onPageEnd(mContext,Configs.AppStore_Interface_SettingsPage);
 	}
 
 	@Override
 	public void onResume() {
 		super.onResume();
-		//MapbarMobStat.onPageStart(mContext,Configs.AppStore_Interface_SettingsPage);
+		//8MapbarMobStat.onPageStart(mContext,Configs.AppStore_Interface_SettingsPage);
 	}
 
 	@Override
 	public void onPause() {
 		super.onPause();
-		//MapbarMobStat.onPageEnd(mContext,Configs.AppStore_Interface_SettingsPage);
+		//8MapbarMobStat.onPageEnd(mContext,Configs.AppStore_Interface_SettingsPage);
 	}
 
 	@Override
