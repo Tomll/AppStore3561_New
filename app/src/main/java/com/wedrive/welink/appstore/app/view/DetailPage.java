@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.RadioButton;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -70,7 +71,7 @@ public class DetailPage extends BasePage implements OnClickListener {
 	private DetailPageDetail mDetailPageDetail;
 	private DetailPageCommon mDetailPageCommon;
 
-	private TextView txt_detail, txt_common;
+	private RadioButton txt_detail, txt_common;
 	private ImageView imageView_app_icon;
 	private ProgressBar lcb_download_progress;
 	private RatingBar rtb_app_class;
@@ -117,8 +118,8 @@ public class DetailPage extends BasePage implements OnClickListener {
 		view.findViewById(R.id.imgView_details_open).setOnClickListener(this);
 		view.findViewById(R.id.imgView_details_update).setOnClickListener(this);
 
-		txt_detail = (TextView) view.findViewById(R.id.txt_detail);
-		txt_common = (TextView) view.findViewById(R.id.txt_common);
+		txt_detail = (RadioButton) view.findViewById(R.id.txt_detail);
+		txt_common = (RadioButton) view.findViewById(R.id.txt_common);
 
 		lv_detail = view.findViewById(R.id.lv_detail);
 		lv_common = view.findViewById(R.id.lv_common);

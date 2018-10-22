@@ -13,6 +13,7 @@ import android.view.View.OnClickListener;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
@@ -174,10 +175,10 @@ public class HomePage extends BasePage implements OnClickListener {
         tv_first_title = (TextView) view.findViewById(R.id.tv_first_title);
 
         //纵向的四个tab
-        TextView txt_recom = (TextView) view.findViewById(R.id.txt_recom);
-        TextView txt_search = (TextView) view.findViewById(R.id.txt_search);
-        TextView txt_list = (TextView) view.findViewById(R.id.txt_list);
-        TextView txt_mannger = (TextView) view.findViewById(R.id.txt_mannger);
+        RadioButton txt_recom = (RadioButton) view.findViewById(R.id.txt_recom);
+        RadioButton txt_search = (RadioButton) view.findViewById(R.id.txt_search);
+        RadioButton txt_list = (RadioButton) view.findViewById(R.id.txt_list);
+        RadioButton txt_mannger = (RadioButton) view.findViewById(R.id.txt_mannger);
 
         txt_recom.setOnClickListener(this);
         txt_search.setOnClickListener(this);
@@ -213,7 +214,7 @@ public class HomePage extends BasePage implements OnClickListener {
 
         currentMenu = txt_recom;
         currentContent = lv_recom;
-        currentMenu.setSelected(true);
+//        currentMenu.setSelected(true);
         mSelectViewId = 1;
         ((MainActivity) mAif).onClick_View_OnClick_Event(mContext, Configs.AppStore_OnClick_Recommend);
     }
@@ -303,9 +304,9 @@ public class HomePage extends BasePage implements OnClickListener {
                     //MainActivity.mMainActivity.setFirstTitle("推荐");
                     setTitle("推荐");
                     lv_search_area.setVisibility(View.GONE);
-                    currentMenu.setSelected(false);
+//                    currentMenu.setSelected(false);
                     currentContent.setVisibility(View.GONE);
-                    v.setSelected(true);
+//                    v.setSelected(true);
                     lv_recom.setVisibility(View.VISIBLE);
                     currentMenu = v;
                     currentContent = lv_recom;
@@ -321,9 +322,9 @@ public class HomePage extends BasePage implements OnClickListener {
                     //MainActivity.mMainActivity.dismissTitle();
                     lv_title_area.setVisibility(View.GONE);
 
-                    currentMenu.setSelected(false);
+//                    currentMenu.setSelected(false);
                     currentContent.setVisibility(View.GONE);
-                    v.setSelected(true);
+//                    v.setSelected(true);
                     lv_search.setVisibility(View.VISIBLE);
                     currentMenu = v;
                     currentContent = lv_search;
@@ -338,9 +339,9 @@ public class HomePage extends BasePage implements OnClickListener {
                     //MainActivity.mMainActivity.setTitleDividerVisibile(true);
                     setTitle("榜单");
                     lv_search_area.setVisibility(View.GONE);
-                    currentMenu.setSelected(false);
+//                    currentMenu.setSelected(false);
                     currentContent.setVisibility(View.GONE);
-                    v.setSelected(true);
+//                    v.setSelected(true);
                     lv_list.setVisibility(View.VISIBLE);
                     currentMenu = v;
                     currentContent = lv_list;
@@ -355,9 +356,9 @@ public class HomePage extends BasePage implements OnClickListener {
 //                    setUserIcon();
                     setTitle("管理");
                     lv_search_area.setVisibility(View.GONE);
-                    currentMenu.setSelected(false);
+//                    currentMenu.setSelected(false);
                     currentContent.setVisibility(View.GONE);
-                    v.setSelected(true);
+//                    v.setSelected(true);
                     lv_mannger.setVisibility(View.VISIBLE);
                     currentMenu = v;
                     currentContent = lv_mannger;

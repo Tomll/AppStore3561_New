@@ -3,24 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<!--    <com.mapbar.scale.ScaleLinearLayout
-        android:id="@+id/lv_search_area"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:visibility="gone" >
-        <include layout="@layout/layout_title_search" />
-    </com.mapbar.scale.ScaleLinearLayout>-->
+    <!--    <com.mapbar.scale.ScaleLinearLayout
+            android:id="@+id/lv_search_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" >
+            <include layout="@layout/layout_title_search" />
+        </com.mapbar.scale.ScaleLinearLayout>-->
 
     <com.mapbar.scale.ScaleLinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:orientation="horizontal">
 
-        <com.mapbar.scale.ScaleLinearLayout
+        <!--<com.mapbar.scale.ScaleLinearLayout
             android:layout_width="70dp"
             android:layout_height="match_parent"
             android:background="@drawable/bg_menu_shade_normal"
@@ -75,19 +74,83 @@
                 android:gravity="center"
                 android:text="@string/app_store_mannger"
                 android:textColor="@drawable/txt_color_state" />
-        </com.mapbar.scale.ScaleLinearLayout>
+        </com.mapbar.scale.ScaleLinearLayout>-->
+
+
+        <RadioGroup
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_menu_shade_normal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <RadioButton
+                android:id="@+id/txt_recom"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/txt_shade_state"
+                android:button="@null"
+                android:checked="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/app_store_recom"
+                android:textColor="@drawable/txt_color_state"
+                android:textSize="32sp" />
+
+            <RadioButton
+                android:id="@+id/txt_search"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/txt_shade_state"
+                android:button="@null"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/app_store_search"
+                android:textColor="@drawable/txt_color_state"
+                android:textSize="32sp" />
+
+            <RadioButton
+                android:id="@+id/txt_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/txt_shade_state"
+                android:button="@null"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/app_store_list"
+                android:textColor="@drawable/txt_color_state"
+                android:textSize="32sp" />
+
+            <RadioButton
+                android:id="@+id/txt_mannger"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/txt_shade_state"
+                android:button="@null"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/app_store_mannger"
+                android:textColor="@drawable/txt_color_state"
+                android:textSize="32sp" />
+        </RadioGroup>
 
         <com.mapbar.scale.ScaleLinearLayout
             android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <com.mapbar.scale.ScaleLinearLayout
                 android:id="@+id/lv_search_area"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:visibility="gone" >
+                android:visibility="gone">
+
                 <include layout="@layout/layout_title_search" />
             </com.mapbar.scale.ScaleLinearLayout>
 
@@ -96,9 +159,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:visibility="visible" >
-                <include
-                    layout="@layout/layout_title_common2" />
+                android:visibility="visible">
+
+                <include layout="@layout/layout_title_common2" />
             </com.mapbar.scale.ScaleLinearLayout>
 
             <com.mapbar.scale.ScaleFrameLayout
