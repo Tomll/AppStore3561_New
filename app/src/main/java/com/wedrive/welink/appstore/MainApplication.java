@@ -72,7 +72,7 @@ public class MainApplication extends Application implements DbUtils.DbUpgradeLis
 		ScaleCalculator.init(this, 0, 1024, 600, 1.5f);
 		// 初始化统计服务
 		MapbarMobStat.prestrain(this);
-		MapbarMobStat.setServerIp("http://1.202.136.11:8004");
+		//MapbarMobStat.setServerIp("http://1.202.136.11:8004"); //公司内部环境需要配置IP,外部正式环境不需要
 		//MapbarMobStat.readyToStatistic(this);//调用此方法才会将统计数据持久化存储，比较耗时，建议放在空闲时操作
 		initPreferce();
 		initFile();
