@@ -6,6 +6,7 @@ import android.content.pm.PackageInfo;
 import android.database.Cursor;
 import android.os.Handler;
 import android.os.Message;
+import android.provider.Settings;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -336,10 +337,13 @@ public class DetailPageCommon implements OnClickListener {
 					}else{
 						mAif.showAlert("请先安装应用");	
 					}
-				}
-				else if(!Configs.APPSTORE_IS_LOGIN){
-					mAif.showAlert("请先登录账号");
-				}
+                } else if (Settings.Global.getInt(mContext.getContentResolver(),
+                        "login_state", 0) == 0) {
+                    mAif.showAlert("请先登录个人中心账号");
+                }
+                /*else if(!Configs.APPSTORE_IS_LOGIN){
+                    mAif.showAlert("请先登录账号");
+				}*/
 				else{
 					getAppUserCommon(appDetails);
 				}
@@ -393,7 +397,7 @@ public class DetailPageCommon implements OnClickListener {
 		}
 
 		if (CommonUtil.isNetworkAvailable(mContext)) {
-			String user_id=PropertiesUtil.getProperties(mContext, "WeDrive_Login_User_ID");
+			//String user_id=PropertiesUtil.getProperties(mContext, "WeDrive_Login_User_ID");
 			SearchProvider provider = new SearchProvider(mContext);
 			provider.setOnProviderListener(mAppsListener);
 			LinkedHashMap<String, String> paramMap = new LinkedHashMap<String, String>();
@@ -402,12 +406,14 @@ public class DetailPageCommon implements OnClickListener {
 
 			LinkedHashMap<String, String> paramMap2 = new LinkedHashMap<String, String>();
 			if(comm!=null) paramMap2.put("comment_id", comm.data_id);
-			paramMap2.put("user_id", user_id);
+			//paramMap2.put("user_id", user_id);
 			paramMap2.put("content", commentContent);
 			paramMap2.put("score", ""+score);
 
-			String token=PropertiesUtil.getProperties(mContext, "WeDrive_Login_Token");
-			MyHttpHandler myHttpHandler = provider.upLoadAppCommon(paramMap,paramMap2,token);
+			//String token=PropertiesUtil.getProperties(mContext, "WeDrive_Login_Token");
+            String token = Settings.Global.getString(mContext.getContentResolver(), "token");
+
+            MyHttpHandler myHttpHandler = provider.upLoadAppCommon(paramMap,paramMap2,token);
 			mAif.showProgressDialog(myHttpHandler, R.string.dialog_upload_app_common, true);
 		}else{
 			mAif.showAlert(R.string.dialog_loading_net_unconnect);

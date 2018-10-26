@@ -290,7 +290,7 @@ public class SearchProvider extends Provider
 		if(Configs.isDebug) Log.e(TAG,"upLoadAppCommon:"+sbUrl.toString());
 		HashMap<String, String> headers = new HashMap<String, String>();
 		headers.put("token",token);
-		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
+		//headers.put("ck",Configs.HEADER_CORPORATE_KEY);
 		setHeaders(headers);
 		return getDataFromNet(HttpRequestType.GET, Configs.REQUEST_CODE_UPLOAD_APP_COMMON, 1,sbUrl.toString());
 	}

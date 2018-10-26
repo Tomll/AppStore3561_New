@@ -25,7 +25,8 @@ public class Configs
 	public final static String URL_LOAD_APP_DETAIL="http://wdservice.mapbar.com/appstorewsapi/appdetail";
 	public final static String URL_LOAD_APP_COMMONS="http://wdservice.mapbar.com/appstorewsapi/getcomments";
 	public final static String URL_LOAD_APP_USER_COMMONS="http://wdservice.mapbar.com/appstorewsapi/getcomment";
-	public final static String URL_UPLOAD_APP_COMMON="http://wdservice.mapbar.com/appstorewsapi/docomment";
+//	public final static String URL_UPLOAD_APP_COMMON="http://wdservice.mapbar.com/appstorewsapi/docomment";
+	public final static String URL_UPLOAD_APP_COMMON="http://wdservice.mapbar.com/appstorewsapi/doCommentByWecloud";//兼容3561个人中心账号的评论接口
 	public final static String URL_APPS_RECOM_LIST="http://wdservice.mapbar.com/appstorewsapi/searchinit";
 	public final static String URL_SEARCH_APPS_LIST="http://wdservice.mapbar.com/appstorewsapi/search";
 	public final static String URL_CHECK_VERSION_APPS="http://wdservice.mapbar.com/appstorewsapi/checkversions";
