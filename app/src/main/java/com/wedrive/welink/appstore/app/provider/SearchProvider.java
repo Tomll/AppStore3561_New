@@ -109,9 +109,10 @@ public class SearchProvider extends Provider
 		}
 		sbUrl.append(queryString);
 		if(Configs.isDebug) Log.e(TAG,"loadAppDetail:"+sbUrl);
-		HashMap<String, String> headers = new HashMap<String, String>();
-		headers.put("ck",Configs.HEADER_CORPORATE_KEY);
-		setHeaders(headers);
+		//访问应用详情的时候不能在header中加CK值，否则应用下载次数返回值为0，
+		//HashMap<String, String> headers = new HashMap<String, String>();
+		//headers.put("ck",Configs.HEADER_CORPORATE_KEY);
+		//setHeaders(headers);
 		return getDataFromNet(HttpRequestType.GET, Configs.REQUEST_CODE_LOAD_APP_DETAIL, -1,sbUrl.toString());
 	}
 	

@@ -127,7 +127,7 @@ public class MainActivity extends AppActivity implements OnActivityListener {
         mMainController = new MainController(this);
         MainApplication.getInstance().setOnActivityListener(this);
         AppUtil.init(this);
-        initRoot();
+//        initRoot();
         mMainController.onNewIntent(getIntent());
 
         //注册应用安装卸载的监听
