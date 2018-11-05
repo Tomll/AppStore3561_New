@@ -954,6 +954,8 @@ public class DetailPage extends BasePage implements OnClickListener {
 				}
 			}else{
 				setButtonState(Configs.APP_BUTTON_STATUS_START);
+                //Bug #14765：若下载过程中网络错误，弹窗提示
+                mAif.showAlert(R.string.dialog_loading_net_error);
 				try {
 					if (downloadInfo != null) {
 						if (downloadInfo.getFileLength() > 0) {

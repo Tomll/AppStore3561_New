@@ -431,6 +431,13 @@ public class MainController {
 			if (mBaseActivity != null && !mBaseActivity.isFinishing()) {
 				mBaseActivity.hideProgressDialog();
 			}
+			//解决Bug #14761: 检查更新时，若网络错误，弹窗提示
+			if (responseCode == -1) {
+				initView();
+				mBaseActivity.showAlert(R.string.dialog_loading_net_error);
+				return;
+			}
+
 			//BUG号：WELM-3258：bug链接：https://wdjira.mapbar.com/browse/WELM-3258
 			if (result == null || TextUtils.isEmpty(result.getResponseStr()))
 				return;
